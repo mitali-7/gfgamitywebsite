@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #43a047;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3d8e41;
+}
+
+.homePage-landing {
+  margin-top: -95px;
+  background-image: url("../assets/background.png");
+  background-size: cover;
+  background-position: center center;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  color: black;
+  text-align: center;
+  padding-right: 200px;
+  padding-left: 200px;
+  border-bottom: 5px solid white;
+}
+.homePage-landing h1 {
+  font-weight: 600;
+  font-size: 55px;
+}
+.homePage-landing p {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 20px;
+}
+.homePage-landing h1 span {
+  color: #43a047;
+}
+.homePage-landing-buttons {
+  width: 600px;
+  margin: 0 auto;
+}
+.homePage-landing-buttons-button-1 button,
+.homePage-landing-buttons-button-2 button {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: black;
+  font-size: 19px;
+  transition: all 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+.homePage-landing-buttons-button-1 button,
+.homePage-landing-buttons-button-2 button:hover {
+  background-color: transparent;
+  border: 2px solid #43a047;
+  border-radius: 100px;
+}
+.homePage-landing-buttons-button-2 button,
+.homePage-landing-buttons-button-1 button:hover {
+  border-radius: 100px;
+  border: 2px solid #43a047;
+  background-color: #43a047;
+}
+.homePage-landing-buttons-button-2 button {
+  margin-left: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .homePage-landing {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .homePage-landing h1 {
+    font-size: 35px;
+  }
+  .homePage-landing p {
+    font-size: 16px;
+  }
+  .homePage-landing-buttons {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 596px) {
+  .homePage-landing {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .homePage-landing-buttons-button-2 button {
+    margin-left: 10px;
+  }
+  .homePage-landing-buttons-button-1 button,
+  .homePage-landing-buttons-button-2 button {
+    font-size: 14px;
+  }
+}
+.homePage-testimonials {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+
+.testimonials {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.homePage-testimonials h1 {
+  font-weight: 600;
+}
+@media screen and (max-width: 1200px) {
+  .homePage-testimonials {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .homePage-testimonials {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.homePage-testimonials .see-more {
+  color: #43a047;
+  text-decoration: none;
+}
+.homePage-testimonials .see-more:hover {
+  color: #3a8a3e;
+  text-decoration: none;
+}
+.see-more i {
+  font-size: 12px;
+}
+.homePage-contact-box {
+  color: black;
+  background-color: #3d8e41;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 24px;
+  margin-bottom: 50px;
+}
+.homePage-contact-box .form-field {
+  background-color: rgba(40, 55, 41, 0.56);
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.homePage-contact-box .form-field input {
+  outline: transparent;
+  margin-left: 50px;
+  background-color: transparent;
+  border: 0px solid;
+  height: 38px;
+  color: black;
+}
+.homePage-contact-box .form-field button {
+  background-color: #fff;
+  border-radius: 100px;
+  border: 0px solid;
+  color: #3c9640;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.homePage-contact-box .form-field button:hover {
+  background-color: #ffffffc7;
+}
+.homePage-contact-box .form-field input::placeholder {
+  color: rgba(255, 255, 255, 0.61);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 510px) {
+  .homePage-contact-box {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .homePage-contact-box .form-field {
+    width: 300px;
+  }
+  .homePage-contact-box .form-field input {
+    outline: transparent;
+    margin-left: 10px;
+    width: 200px;
+  }
+}
+
+.homePage-numbers {
+  text-align: center;
+  color: black;
+}
+
+.number-Card h3 {
+  padding-top: 10px;
+}
+
+.homePage-footer {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border-top: 2px solid #fff;
+  color: #fff;
+  padding-top: 15px;
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+  transform-origin: bottom;
+}
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+  transform-origin: top;
+}
+
+.homePage-socials {
+  text-align: center;
+  color: black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.homePage-socials h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+}
+.homePage-socials h1 span {
+  color: #3a8a3e;
+}
+.homePage-socials a {
+  color: black;
+  font-size: 30px;
+  transition: 0.2s ease-in-out all;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.homePage-socials a:nth-child(1) {
+  margin-left: 0px;
+}
+.homePage-socials a:hover {
+  color: #3a8a3e;
+}
+.homePage-testimonials h1 span,
+.homePage-numbers h1 span {
+  color: #43a047;
+}
+
+.homePage-numbers {
+  padding-right: 150px;
+  padding-left: 150px;
+}
+.number-Card {
+  font-family: "Poppins", sans-serif;
+  border-radius: 12px;
+
+  box-shadow: 1px 0px 4px 0px rgba(255, 255, 255, 0.43);
+
+  width: 350px;
+}
+.number-Card h3 {
+  padding-top: 10px;
+}
+
+.graph-block {
+  width: 230px;
+  height: 280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -35px;
+}
+.green {
+  color: #43a047;
+}
+
+@media screen and (max-width: 475px) {
+  .number-Card {
+    width: 100%;
+  }
+}
+
+.c-item {
+  height: 800px;
+}
+.c-img {
+  width: 100%;
+  height: auto;
+}
+.events h1 span {
+  color: #43a047;
+}
+.events h1 {
+  font-weight: bold;
+}
+.icons {
+  height: 10px;
+  width: 10px;
+}
+.url {
+  text-decoration: underline;
+  color: #43a047;
+  font-weight: bold;
+}
+footer {
+  background-color: rgba(128, 128, 128, 0.15);
+  font-family: "Poppins", sans-serif;
+}
+.carousel-container {
+  width: 80%;
+  margin: 0 auto; /* Center the carousel */
+}
+.cr-button {
+  color: black;
+}

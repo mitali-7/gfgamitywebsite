@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.navbar{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+}
+.navbar-logo{
+    width: 60px;
+    height: 50px;
+}
+
+.nav-link button:hover{
+    background-color: #224824;
+}
+@media screen and (max-width: 1400px){
+    .navbar{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+   
+}
+.navbar-toggler{
+    color: white;
+}
+@media screen and (max-width: 490px){
+    .navbar{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .navbar-brand img{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 370px){
+    .navbar{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .navbar-brand img{
+        width: 200px;
+    }
+}
