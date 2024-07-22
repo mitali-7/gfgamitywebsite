@@ -1,0 +1,53 @@
+.team-grid {
+    margin-bottom: 100px;
+}
+
+.title {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.subtitle {
+    font-size: 32px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.subtitle span {
+    color: #FF5733;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.c-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.c-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.c-container {
+    padding: 16px;
+}
+
+.c-container h4 {
+    margin: 10px 0;
+}
+
+.c-container p {
+    margin: 5px 0;
+}
