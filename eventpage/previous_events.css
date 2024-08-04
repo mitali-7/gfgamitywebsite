@@ -1,0 +1,18 @@
+h2 {
+  color: #43a047;
+}
+p {
+  text-align: justify;
+  color: black;
+}
+.row-height {
+  height: 300px fixed; /* Set your desired fixed height */
+}
+.carousel-item img {
+  object-fit: contain; /* or 'cover' depending on your preference */
+}
+.custom {
+  height: 75% !important;
+
+  object-fit: auto;
+}
