@@ -220,4 +220,16 @@ body {
     transform: translateY(0) !important;
     opacity: 1 !important;
   }
+}.icons {
+  height: 10px;
+  width: 10px;
+}
+.url {
+  text-decoration: underline;
+  color: #43a047;
+  font-weight: bold;
+}
+footer {
+  background-color: rgba(128, 128, 128, 0.15);
+  font-family: "Poppins", sans-serif;
 }
