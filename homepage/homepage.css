@@ -16,11 +16,12 @@
 }
 
 .homePage-landing {
-  margin-top: -95px;
+  margin-top: -50px;
+  margin-bottom: 100px;
   background-image: url("../assets/background.png");
   background-size: cover;
   background-position: center center;
-  padding-top: 250px;
+  padding-top: 150px;
   padding-bottom: 250px;
   color: black;
   text-align: center;
@@ -280,11 +281,10 @@
 .number-Card {
   font-family: "Poppins", sans-serif;
   border-radius: 12px;
-
   box-shadow: 1px 0px 4px 0px rgba(255, 255, 255, 0.43);
-
   width: 350px;
 }
+
 .number-Card h3 {
   padding-top: 10px;
 }
@@ -298,6 +298,7 @@
   flex-direction: column;
   margin-top: -35px;
 }
+
 .green {
   color: #43a047;
 }
@@ -337,7 +338,24 @@ footer {
 .carousel-container {
   width: 80%;
   margin: 0 auto; /* Center the carousel */
+  margin-bottom: 20px;
 }
 .cr-button {
   color: black;
+}
+.homePage-landing {
+  width: 100%; /* Set the width of the div */
+  height: 550px; /* Set a specific height */
+  margin-bottom: 20px; /* Set the height of the div */
+  background-image: url("bg.jpg");
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.25
+  ); /* White color overlay with 50% opacity */
+  background-blend-mode: lighten; /* Update this with your image path */
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
 }
