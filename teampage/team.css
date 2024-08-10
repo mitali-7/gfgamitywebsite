@@ -50,10 +50,14 @@ body {
   position: relative !important;
   width: 18rem !important;
   height: 21rem !important;
-  background: #2f8c4524 !important;
-  box-shadow: 0 1px 5px rgb(174, 175, 172) !important;
+  background: rgba(0, 0, 0, 0.521) !important;
+  box-shadow: 5px 5px 5px 5px rgb(174, 175, 172) !important;
   border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
-  transition: transform 0.5s !important;
+  transition: transform 0.5s, box-shadow 0.5s !important;
+}
+
+.card:hover {
+  box-shadow: none !important; /* Remove original box shadow on hover */
 }
 
 .card:before,
@@ -64,7 +68,8 @@ body {
   left: 0 !important;
   width: 100% !important;
   height: 100% !important;
-  background: #2f8c4524 !important;
+  background: #43a047 !important;
+  box-shadow: none;
   border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
   transition: 1s !important;
   z-index: -1 !important;
@@ -72,14 +77,17 @@ body {
 
 .card:hover:before {
   transform: rotate(20deg) !important;
-  box-shadow: 2px 20px #2f8c4524 !important;
+  box-shadow: 2px 20px #2f8c4524 !important; /* Adjusted shadow for :before */
   border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
 }
 
 .card:hover:after {
   transform: rotate(10deg) !important;
-  box-shadow: 2px 20px #2f8c4524 !important;
+  box-shadow: 1px 10px #2f8c4524 !important; /* Adjusted shadow for :after */
   border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
+}
+.card p {
+  color: white;
 }
 
 .imgbox {
@@ -130,7 +138,7 @@ body {
     background: white !important;
     position: fixed !important;
     right: 0 !important;
-    width:100%;
+    width: 100%;
     top: 0 !important;
     height: 200px !important;
     width: 100% !important;
@@ -151,7 +159,7 @@ body {
     width: 19rem !important;
     height: 19rem !important;
     padding: 10px;
-    background:#2f8c4524 !important;
+    background: #2f8c4524 !important;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5) !important;
     border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
     transition: transform 0.5s !important;
@@ -226,27 +234,26 @@ body {
   footer {
     background-color: rgba(128, 128, 128, 0.15);
     font-family: "Poppins", sans-serif;
-    width:100%;
+    width: 100%;
     margin-top: 5rem;
     font-size: small;
   }
   .fc .card {
     margin-left: 0 !important;
-    height:19rem;
-    width:19rem;
+    height: 19rem;
+    width: 19rem;
   }
   .title {
     font-size: 1.5em !important;
     margin-bottom: 10px !important;
     margin-left: 0 !important;
   }
-  
+
   .subtitle {
     font-size: 2em !important;
     margin-bottom: 20px !important;
     margin-left: 0 !important;
   }
-  
 }
 .icons {
   height: 10px;
@@ -260,12 +267,12 @@ body {
 footer {
   background-color: rgba(128, 128, 128, 0.15);
   font-family: "Poppins", sans-serif;
-  width:100%;
+  width: 100%;
   margin-top: 5rem;
   padding: 10px;
 }
-.navbar{
-  width:100%;
+.navbar {
+  width: 100%;
   height: 200px;
   font-size: larger;
 }

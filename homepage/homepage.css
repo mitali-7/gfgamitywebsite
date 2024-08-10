@@ -14,7 +14,9 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #3d8e41;
 }
-
+body {
+  background-color: #43a04854;
+}
 .homePage-landing {
   margin-top: -50px;
   margin-bottom: 100px;
