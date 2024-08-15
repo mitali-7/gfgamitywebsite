@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 body {
   margin: 0 !important;
   height: 100vh !important;
@@ -5,7 +6,6 @@ body {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  font-family: sans-serif !important;
 }
 
 .logo {
@@ -34,7 +34,7 @@ body {
 }
 
 .subtitle span {
-  color: #224824 !important;
+  color: #43a047 !important;
 }
 
 .grid-container {

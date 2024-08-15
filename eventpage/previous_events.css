@@ -20,7 +20,9 @@ p {
   display: inline-block;
   cursor: pointer;
 }
-
+footer h2 {
+  color: #212529 !important;
+}
 .event-count {
   visibility: hidden;
   background-color: #43a047;
