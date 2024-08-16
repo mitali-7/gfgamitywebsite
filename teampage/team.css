@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #43a047;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3d8e41;
+}
 body {
   margin: 0 !important;
   height: 100vh !important;
@@ -233,10 +248,8 @@ body {
   }
   footer {
     background-color: rgba(128, 128, 128, 0.15);
-    font-family: "Poppins", sans-serif;
     width: 100%;
     margin-top: 5rem;
-    font-size: small;
   }
   .fc .card {
     margin-left: 0 !important;
@@ -266,7 +279,6 @@ body {
 }
 footer {
   background-color: rgba(128, 128, 128, 0.15);
-  font-family: "Poppins", sans-serif;
   width: 100%;
   margin-top: 5rem;
   padding: 10px;
@@ -274,5 +286,4 @@ footer {
 .navbar {
   width: 100%;
   height: 200px;
-  font-size: larger;
 }

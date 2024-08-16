@@ -114,7 +114,7 @@ body {
 }
 
 .testimonials {
-  margin-top: 50px;
+  margin-top: 10px;
   margin-bottom: 50px;
 }
 .homePage-testimonials h1 {
@@ -360,4 +360,13 @@ footer {
   background-size: cover; /* Cover the entire div */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat;
+}
+.carousel-container {
+  margin-bottom: 20px !important;
+  /* Adjust this value as needed */
+}
+
+.homePage-testimonials {
+  margin-top: 10px !important;
+  /* Adjust this value as needed */
 }
