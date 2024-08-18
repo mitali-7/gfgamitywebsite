@@ -27,24 +27,14 @@ body {
   font-size: 1.5rem !important;
   font-weight: bold !important;
 }
-
-.fc {
-  display: inline-block !important;
-  padding: 5rem !important;
-}
-.fc .card {
-  margin-left: 10rem !important;
-}
-
 .title {
   font-size: 1.5em !important;
-  margin-bottom: 10px !important;
   margin-left: 5rem !important;
+  margin-top: 5rem;
 }
 
 .subtitle {
   font-size: 2em !important;
-  margin-bottom: 20px !important;
   margin-left: 5rem !important;
 }
 
@@ -59,6 +49,18 @@ body {
   width: 80% !important;
   max-width: 1200px !important;
   margin-top: 5rem !important;
+}
+
+.fc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-left: 2rem;
+}
+
+.fc .card {
+  margin: 0 auto;
 }
 
 .card {
@@ -169,15 +171,35 @@ body {
     display: block !important;
   }
 
+  .title {
+    font-size: 1.5em !important;
+    margin-left: 5rem !important;
+    margin-top: 5rem;
+  }
+  
+  .subtitle {
+    font-size: 2em !important;
+    margin-left: 5rem !important;
+  }
+
+  .fc{
+    display: flex;
+    align-items: center;
+  }
+  
   .card {
+    margin: 0 auto;
     position: relative !important;
     width: 19rem !important;
-    height: 19rem !important;
-    padding: 10px;
-    background: #2f8c4524 !important;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5) !important;
+    height: 20rem !important;
+    background: rgba(0, 0, 0, 0.521) !important;
+    box-shadow: 5px 5px 5px 5px rgb(174, 175, 172) !important;
     border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
     transition: transform 0.5s !important;
+  }
+
+  .card:hover {
+    box-shadow: none !important; 
   }
 
   .card:before,
@@ -188,7 +210,8 @@ body {
     left: 0 !important;
     width: 100% !important;
     height: 100% !important;
-    background: #2f8c4524 !important;
+    background: #43a047 !important;
+    box-shadow: none;
     border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
     transition: 1s !important;
     z-index: -1 !important;
@@ -202,7 +225,7 @@ body {
 
   .card:hover:after {
     transform: rotate(10deg) !important;
-    box-shadow: 2px 20px #2f8c4524 !important;
+    box-shadow: 1px 10px #2f8c4524 !important;
     border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
   }
 
@@ -211,17 +234,16 @@ body {
     width: 100% !important;
     height: 100% !important;
     display: flex !important;
-    padding-bottom: 10px;
-    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
-    flex-direction: column !important;
+    padding-top: 20px;
     justify-content: center !important;
     align-items: center !important;
+    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
     transition: 0.5s !important;
   }
 
   .imgbox img {
-    max-width: 17rem !important;
-    max-height: 16rem !important;
+    max-width: 60% !important;
+    max-height: auto !important;
     transition: transform 0.5s !important;
     border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
   }
@@ -232,7 +254,7 @@ body {
     background: rgba(255, 255, 255, 0.007) !important;
     width: 50% !important;
     text-align: center !important;
-    padding: 0 !important;
+    padding-top: 10px; !important;
     transform: translateY(100%) !important;
     transition: opacity 0.3s, transform 0.5s !important;
     opacity: 0 !important;
@@ -250,22 +272,6 @@ body {
     background-color: rgba(128, 128, 128, 0.15);
     width: 100%;
     margin-top: 5rem;
-  }
-  .fc .card {
-    margin-left: 0 !important;
-    height: 19rem;
-    width: 19rem;
-  }
-  .title {
-    font-size: 1.5em !important;
-    margin-bottom: 10px !important;
-    margin-left: 0 !important;
-  }
-
-  .subtitle {
-    font-size: 2em !important;
-    margin-bottom: 20px !important;
-    margin-left: 0 !important;
   }
 }
 .icons {
