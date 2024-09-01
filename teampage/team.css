@@ -74,7 +74,7 @@ body {
 }
 
 .card:hover {
-  box-shadow: none !important; /* Remove original box shadow on hover */
+  box-shadow: none !important; 
 }
 
 .card:before,
@@ -293,3 +293,7 @@ footer {
   width: 100%;
   height: 200px;
 }
+.fab.fa-linkedin {
+  color: #79c5ee; /* Replace this with your desired color */
+}
+
