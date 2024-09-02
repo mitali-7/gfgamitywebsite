@@ -51,102 +51,168 @@ body {
   margin-top: 5rem !important;
 }
 
-.fc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  margin-left: 2rem;
-}
-
-.fc .card {
-  margin: 0 auto;
-}
-
+/* Card Styles */
 .card {
-  position: relative !important;
-  width: 18rem !important;
-  height: 21rem !important;
-  background: rgba(0, 0, 0, 0.521) !important;
-  box-shadow: 5px 5px 5px 5px rgb(174, 175, 172) !important;
-  border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
-  transition: transform 0.5s, box-shadow 0.5s !important;
+  position: relative;
+  width: 18rem; /* Rectangle shape */
+  height: 21rem;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 5px 5px rgb(174, 175, 172);
+  border-radius: 8px; /* Slightly rounded corners for a rectangle shape */
+  transition: transform 0.5s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Arrange content vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: flex-start; /* Align content to the top */
 }
 
+/* Hover Effects for Card */
 .card:hover {
-  box-shadow: none !important; 
-}
-
-.card:before,
-.card:after {
-  content: "" !important;
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  background: #43a047 !important;
+  transform: scale(1.05); /* Scale up the card */
   box-shadow: none;
-  border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
-  transition: 1s !important;
-  z-index: -1 !important;
 }
 
-.card:hover:before {
-  transform: rotate(20deg) !important;
-  box-shadow: 2px 20px #2f8c4524 !important; /* Adjusted shadow for :before */
-  border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
-}
-
-.card:hover:after {
-  transform: rotate(10deg) !important;
-  box-shadow: 1px 10px #2f8c4524 !important; /* Adjusted shadow for :after */
-  border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
-}
-.card p {
-  color: white;
-}
-
+/* Image Box Styles */
 .imgbox {
-  position: relative !important;
-  width: 100% !important;
-  height: 100% !important;
-  padding-bottom: 20px;
-  display: flex !important;
-  border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  align-items: center !important;
-  transition: 0.5s !important;
+  position: relative;
+  width: 100%;
+  height: 70%; /* 70% height for image area */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+  overflow: hidden; /* Prevent overflow of child elements */
+  margin-bottom: 10px; /* Space below image for name and designation */
 }
 
+/* Image Styles */
 .imgbox img {
-  max-width: 15rem !important;
-  max-height: 15rem !important;
-  transition: transform 0.5s !important;
-  border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
+  width: 98%; /* Slim gap between image and card border */
+  height: 98%;
+  transition: transform 0.5s;
+  border-radius: 8px; /* Match card corners */
 }
 
-.details {
-  position: absolute !important;
-  bottom: 0 !important;
-  background: rgba(255, 255, 255, 0.007) !important;
-  width: 50% !important;
-  text-align: center !important;
-  padding: 0 !important;
-  transform: translateY(100%) !important;
-  transition: opacity 0.3s, transform 0.5s !important;
-  opacity: 0 !important;
-}
-
+/* Hover Effects for Image */
 .card:hover .imgbox img {
-  transform: scale(0.8) !important;
+  transform: scale(1.1); /* Scale up the image */
 }
 
-.card:hover .details {
-  transform: translateY(0) !important;
-  opacity: 1 !important;
+/* Details Container */
+/* Details Container */
+.details {
+  position: relative; /* Changed to relative to position below the image */
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center items vertically */
+  transition: transform 0.5s, opacity 0.3s;
+  opacity: 1; /* Make details always visible */
 }
+
+/* Name Styles */
+.name {
+  font-size: 1.2rem;
+  color: black; /* Black color for the font */
+  margin-bottom: 5px;
+}
+
+/* Designation Styles */
+.designation {
+  font-size: 1rem;
+  color: black; /* Black color for the font */
+  margin-top: 5px;
+}
+
+/* Icons Container */
+.icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s;
+  justify-content: center; /* Center icons horizontally */
+  align-items: center; /* Center icons vertically */
+}
+
+/* Hover Effects for Icons */
+.card:hover .icons {
+  opacity: 1; /* Show icons on hover */
+}
+
+/* Icons Styles */
+.icons a {
+  color: #3f63f4;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+/* Hover Effects for Icons Links */
+.icons a:hover {
+  color: #2f8c45;
+}
+
+/* Media Queries for Different Screen Sizes */
+
+/* Tablet Devices */
+@media (max-width: 768px) {
+  .card {
+    width: 16rem; /* Adjust width for tablets */
+    height: 19rem; /* Adjust height for tablets */
+  }
+
+  .imgbox img {
+    width: 96%; /* Adjust image size for tablets */
+    height: 100%;
+  }
+
+  .name {
+    font-size: 1.1rem; /* Adjust text size for tablets */
+  }
+
+  .designation {
+    font-size: 0.9rem; /* Adjust text size for tablets */
+  }
+
+  .icons a {
+    font-size: 1.3rem; /* Adjust icon size for tablets */
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .card {
+    width: 14rem; /* Adjust width for mobile phones */
+    height: 17rem; /* Adjust height for mobile phones */
+  }
+
+  .imgbox img {
+    width: 94%; /* Adjust image size for mobile phones */
+    height: 100%;
+  }
+
+  .name {
+    font-size: 1rem; /* Adjust text size for mobile phones */
+  }
+
+  .designation {
+    font-size: 0.8rem; /* Adjust text size for mobile phones */
+  }
+
+  .icons {
+    gap: 5px; /* Adjust icon spacing for mobile phones */
+  }
+
+  .icons a {
+    font-size: 1.2rem; /* Adjust icon size for mobile phones */
+  }
+}
+
 
 @media (max-width: 768px) {
   .nav-links {
@@ -181,99 +247,13 @@ body {
     font-size: 2em !important;
     margin-left: 5rem !important;
   }
-
-  .fc{
-    display: flex;
-    align-items: center;
-  }
-  
-  .card {
-    margin: 0 auto;
-    position: relative !important;
-    width: 19rem !important;
-    height: 20rem !important;
-    background: rgba(0, 0, 0, 0.521) !important;
-    box-shadow: 5px 5px 5px 5px rgb(174, 175, 172) !important;
-    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
-    transition: transform 0.5s !important;
-  }
-
-  .card:hover {
-    box-shadow: none !important; 
-  }
-
-  .card:before,
-  .card:after {
-    content: "" !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    background: #43a047 !important;
-    box-shadow: none;
-    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
-    transition: 1s !important;
-    z-index: -1 !important;
-  }
-
-  .card:hover:before {
-    transform: rotate(20deg) !important;
-    box-shadow: 2px 20px #2f8c4524 !important;
-    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
-  }
-
-  .card:hover:after {
-    transform: rotate(10deg) !important;
-    box-shadow: 1px 10px #2f8c4524 !important;
-    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
-  }
-
-  .imgbox {
-    position: relative !important;
-    width: 100% !important;
-    height: 100% !important;
-    display: flex !important;
-    padding-top: 20px;
-    justify-content: center !important;
-    align-items: center !important;
-    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
-    transition: 0.5s !important;
-  }
-
-  .imgbox img {
-    max-width: 60% !important;
-    max-height: auto !important;
-    transition: transform 0.5s !important;
-    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10% !important;
-  }
-
-  .details {
-    position: absolute !important;
-    bottom: 0 !important;
-    background: rgba(255, 255, 255, 0.007) !important;
-    width: 50% !important;
-    text-align: center !important;
-    padding-top: 10px; !important;
-    transform: translateY(100%) !important;
-    transition: opacity 0.3s, transform 0.5s !important;
-    opacity: 0 !important;
-  }
-
-  .card:hover .imgbox img {
-    transform: scale(0.8) !important;
-  }
-
-  .card:hover .details {
-    transform: translateY(0) !important;
-    opacity: 1 !important;
-  }
   footer {
     background-color: rgba(128, 128, 128, 0.15);
     width: 100%;
     margin-top: 5rem;
   }
 }
+
 .icons {
   height: 10px;
   width: 10px;
@@ -293,7 +273,5 @@ footer {
   width: 100%;
   height: 200px;
 }
-.fab.fa-linkedin {
-  color: #79c5ee; /* Replace this with your desired color */
-}
+
 
