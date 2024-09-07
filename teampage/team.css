@@ -44,12 +44,13 @@ body {
 
 .grid-container {
   display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
-  gap: 8rem !important;
+  grid-template-columns: repeat(3, 1fr) !important; /* 3 equal columns */
+  gap: 8rem !important; /* Space between items */
   width: 80% !important;
   max-width: 1200px !important;
   margin-top: 5rem !important;
 }
+
 
 /* Card Styles */
 .card {
@@ -99,7 +100,6 @@ body {
   transform: scale(1.1); /* Scale up the image */
 }
 
-/* Details Container */
 /* Details Container */
 .details {
   position: relative; /* Changed to relative to position below the image */
