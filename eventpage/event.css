@@ -18,6 +18,7 @@
 /* General body and container styling */
 body {
     overflow-x: hidden; /* Prevent horizontal overflow */
+    /* background-color: rgb(229, 231, 229) ; */
 }
 
 .container {
