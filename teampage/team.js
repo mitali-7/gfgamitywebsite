@@ -1,3 +1,4 @@
+// Show details on hover
 document.querySelectorAll('.imgbox').forEach(imgbox => {
     imgbox.addEventListener('mouseenter', () => {
         imgbox.querySelector('.details').style.display = 'block';

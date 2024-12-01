@@ -19,7 +19,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
   </head>
-  <body>
+  <body class="light">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <img
@@ -88,6 +88,9 @@
                 >Contact Us</a
               >
             </li>
+            <li><button id="theme-toggle" aria-label="Change to dark theme">Dark Theme
+          </button>
+        </li>
           </ul>
         </div>
       </div>
@@ -99,9 +102,9 @@
     </h3>
     <br />
     <div class="grid-container fc">
-      <div class="card" style="margin: 0 auto; margin-left: 70px; width: 19rem;">
+      <div class="card">
         <div class="imgbox">
-          <img src="team/new leads/FC.jpg" alt="Image">
+          <img src="team/new leads/FC1.jpg" alt="Image">
         </div>
         <div class="details">
           <div class="text-container">
@@ -110,7 +113,7 @@
           </div>
         </div>
       </div>
-      <div class="card" style="margin: 0 auto; margin-left: 30px; width: 19rem;">
+      <div class="card">
         <div class="imgbox">
           <img src="team/new leads/FC.jpg" alt="Image">
         </div>
@@ -121,7 +124,7 @@
           </div>
         </div>
       </div>
-      <div class="card" style="margin: 0 auto; margin-left: 0px; width: 18rem;">
+      <div class="card">
         <div class="imgbox">
           <img src="team/new leads/FC2.jpg" alt="Image">
         </div>
@@ -137,8 +140,8 @@
     <h3 class="subtitle">
       <bold>The <span>Team</span> leading it now</bold>
     </h3>
-    <div class="grid-container">
-      <div class="card" style="margin-right: 30px;margin-left: 180px; width: 19rem;"> 
+    <div class="grid-container lead-container">
+      <div class="card lead"> 
           <div class="imgbox">
               <img src="team/new leads/president.jpg" alt="Image">
           </div>
@@ -153,7 +156,7 @@
               </div>
           </div>
       </div>
-      <div class="card" style="margin: 0 auto; margin-left: 70px; width: 19rem;"> 
+      <div class="card lead"> 
           <div class="imgbox">
               <img src="team/new leads/Vice_President.jpg" alt="Image">
           </div>
@@ -230,7 +233,7 @@
             </div>
           </div>
         </div>
-        <div class="card" style="width: 18rem;height: 38rem;">
+        <div class="card">
           <div class="imgbox">
             <img src="team/new leads/Social_head.jpg" alt="Image">
           </div>
@@ -245,7 +248,7 @@
             </div>
           </div>
         </div>
-        <div class="card" style="width: 18rem;height: 38rem;">
+        <div class="card">
           <div class="imgbox">
             <img src="team/new leads/Design_Head.jpg" alt="Image">
           </div>
@@ -265,8 +268,8 @@
     <h3 class="subtitle" style="margin-bottom: 30px">
       Heads of <span>2023</span>
     </h3>
-    <div class="grid-container">
-      <div class="card" style="margin-right: 30px;margin-left: 180px; width: 19rem;">
+    <div class="grid-container lead-container">
+      <div class="card lead">
         <div class="imgbox">
           <img src="team/old leads/20240612_185946.jpg" alt="Image">
         </div>
@@ -280,7 +283,7 @@
           </div>
         </div>
       </div>
-      <div class="card" style="margin-left: 50px; width: 19.5rem;">
+      <div class="card lead">
         <div class="imgbox">
           <img src="team/old leads/Vice-Prez.JPEG" alt="Image">
         </div>
@@ -390,8 +393,8 @@
     <h3 class="subtitle" style="margin-bottom: 30px">
       Which <span>Started It All</span>
     </h3>
-    <div class="grid-container">
-      <div class="card" style="margin-right: 30px;margin-left: 180px; width: 19rem;">
+    <div class="grid-container lead-container">
+      <div class="card lead">
         <div class="imgbox">
           <img src="team/org team/ex_pres.png" alt="Image">
         </div>
@@ -402,7 +405,7 @@
           </div>
         </div>
       </div>
-      <div class="card" style="margin: 0 auto; margin-left: 40px; width: 19rem;">
+      <div class="card lead">
         <div class="imgbox">
           <img src="team/org team/ex_vice_pres.png" alt="Image">
         </div>
@@ -652,5 +655,21 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+      const button = document.getElementById('theme-toggle');
+      let currentTheme = localStorage.getItem('theme') || 'light';
+    
+      // Set initial theme and button text
+      document.body.className = currentTheme;
+      button.innerText = currentTheme === 'light' ? 'Dark theme' : 'Light theme';
+    
+      button.addEventListener('click', () => {
+        currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+        document.body.className = currentTheme;
+        localStorage.setItem('theme', currentTheme);
+        button.innerText = currentTheme === 'light' ? 'Dark theme' : 'Light theme';
+        button.setAttribute('aria-label', `${currentTheme} mode`);
+      });
+    </script>    
   </body>
 </html>
