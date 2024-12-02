@@ -344,7 +344,7 @@ body.dark .event-count {
     /* Adjust the height of the image changer */
     .image-changer {
         height: 400px; /* Decrease height for smaller screens */
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
 
     /* Adjust the images inside the image changer */
@@ -360,7 +360,7 @@ body.dark .event-count {
     }
 
     .row {
-        margin-top: 10rem;  /* Adjust as needed */
+        margin-top: 9rem;  /* Adjust as needed */
         margin-bottom: 20rem; /* Adjust as needed */
     }
 
@@ -375,6 +375,7 @@ body.dark .event-count {
         padding: 0; /* Decrease top and bottom padding */ /* Adjust height to fit content */
         background-color: #b0b4b1;
         min-height: min-content;
+        margin-top: auto;
     }
 
     /* Adjust footer column styles */

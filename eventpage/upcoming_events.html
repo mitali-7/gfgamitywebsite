@@ -46,8 +46,8 @@
           <li class="nav-item me-3">
             <a class="nav-link" href="/contactUs/contactus.html">Contact Us</a>
           </li>
-          <li class="nav-item me-3"></li>
-          <button id="theme-toggle" class="btn btn-outline-dark">Dark Mode</button>
+          <li class="nav-item me-3">
+            <button id="theme-toggle" aria-label="Change to dark theme">Dark Theme</button>
           </li>
         </ul>
       </div>
@@ -237,13 +237,41 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous">
     </script>
-
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Bootstrap JS with Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS with Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const button = document.getElementById('theme-toggle');
+  let currentTheme = localStorage.getItem('theme') || 'light';
 
+  // Set initial theme and button text
+  document.body.className = currentTheme;
+  button.innerText = currentTheme === 'light' ? 'Dark Mode' : 'Light Mode';
+
+  button.addEventListener('click', () => {
+    currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+    document.body.className = currentTheme;
+    localStorage.setItem('theme', currentTheme);
+    button.innerText = currentTheme === 'light' ? 'Dark Mode' : 'Light Mode';
+    button.setAttribute('aria-label', `${currentTheme} Mode`);
+  });
+</script>  
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Responsive Navbar Toggle
+    const menuIcon = document.querySelector('.menu-icon');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuIcon && navLinks) {
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active'); // Toggle the active class on click
+        });
+    } else {
+        console.error('Menu icon or nav links not found');
+    }
+});
+</script>
 </body>
 </html>

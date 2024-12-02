@@ -642,15 +642,15 @@
     
       // Set initial theme and button text
       document.body.className = currentTheme;
-      button.innerText = currentTheme === 'light' ? 'Dark theme' : 'Light theme';
+      button.innerText = currentTheme === 'light' ? 'Dark Mode' : 'Light Mode';
     
       button.addEventListener('click', () => {
         currentTheme = currentTheme === 'light' ? 'dark' : 'light';
         document.body.className = currentTheme;
         localStorage.setItem('theme', currentTheme);
-        button.innerText = currentTheme === 'light' ? 'Dark theme' : 'Light theme';
-        button.setAttribute('aria-label', `${currentTheme} mode`);
+        button.innerText = currentTheme === 'light' ? 'Dark Mode' : 'Light Mode';
+        button.setAttribute('aria-label', `${currentTheme} Mode`);
       });
-    </script>    
+    </script>        
   </body>
 </html>
