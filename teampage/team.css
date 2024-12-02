@@ -345,6 +345,56 @@ body.dark .navbar {
   color: white;
 }
 
+/* Beautified Navbar Toggler for Small Screens in Dark Mode */
+@media (max-width: 992px) {
+  body.dark .navbar-toggler {
+    border: none; /* Remove default border */
+    background: transparent; /* Make the background transparent */
+  }
+
+  body.dark .navbar-toggler-icon {
+    width: 30px; /* Slightly larger for better visibility */
+    height: 6px; /* Slim bar for a modern look */
+    display: block;
+    position: relative;
+    background-color: white; /* White bars for dark mode */
+    border-radius: 5px; /* Rounded ends for modern design */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2); /* Subtle glow */
+    transition: all 0.3s ease; /* Smooth hover animation */
+  }
+
+  body.dark .navbar-toggler-icon::before,
+  body.dark .navbar-toggler-icon::after {
+    content: "";
+    width: 30px; /* Same width as the main bar */
+    height: 4px; /* Same height */
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease; /* Smooth transition for animations */
+  }
+
+  body.dark .navbar-toggler-icon::before {
+    top: -8px; /* Positioned above the main bar */
+  }
+
+  body.dark .navbar-toggler-icon::after {
+    top: 8px; /* Positioned below the main bar */
+  }
+
+  /* Hover Effect for Navbar Toggler */
+  body.dark .navbar-toggler:hover .navbar-toggler-icon {
+    background-color: #f6f0f0; /* Slightly lighter bar color on hover */
+  }
+
+  body.dark .navbar-toggler:hover .navbar-toggler-icon::before,
+  body.dark .navbar-toggler:hover .navbar-toggler-icon::after {
+    background-color: #ccc; /* Matching hover color */
+  }
+}
+
+
 body.dark .navbar a {
   color: white !important;
 }
@@ -491,10 +541,61 @@ body.dark .copyright {
     border-bottom: none;
   }
 }
+body.dark .nav-item.dropdown .dropdown-menu {
+  background-color: black !important;
+  color: white !important;
+  border: none; /* Optional: Removes border for a cleaner look */
+}
+
+body.dark .nav-item.dropdown .dropdown-item {
+  color: white !important;
+}
+
+body.dark .nav-item.dropdown .dropdown-item:hover {
+  background-color: #43a047; /* Highlight color on hover */
+}
 
 @media (max-width: 480px) {
   body.dark .card {
     background: rgba(255, 255, 255, 0.1) !important;
     color: white !important;
   }
+}
+
+/* General Button Styling */
+#theme-toggle {
+  background-color: #43a047; /* Green background */
+  color: white; /* White text */
+  font-family: 'Poppins', sans-serif; /* Matches overall font style */
+  font-size: 1rem; /* Adjust font size */
+  font-weight: 500; /* Medium-weight text */
+  padding: 10px 20px; /* Add padding for a comfortable click area */
+  border: none; /* Remove border */
+  border-radius: 6px; /* Slightly rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+/* Hover and Active Effects */
+#theme-toggle:hover {
+  background-color: #3d8e41; /* Slightly darker green on hover */
+}
+
+#theme-toggle:active {
+  transform: scale(0.97); /* Slight shrink effect on click */
+}
+
+/* Focus Styling for Accessibility */
+#theme-toggle:focus {
+  outline: none; /* Remove focus outline */
+}
+
+/* Dark Mode Button Styling */
+body.dark #theme-toggle {
+  background-color: #1a1a1a; /* Dark background in dark mode */
+  color: #43a047; /* Green text */
+}
+
+body.dark #theme-toggle:hover {
+  background-color: #333; /* Slightly lighter dark background on hover */
 }
