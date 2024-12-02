@@ -17,7 +17,8 @@
 
 /* General body and container styling */
 body {
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-x: hidden;
+    /* Prevent horizontal overflow */
     /* background-color: rgb(229, 231, 229) ; */
 }
 
@@ -29,7 +30,8 @@ body {
 
 .row {
     height: 500px;
-    margin: 0; /* Remove extra margin to prevent overflow */
+    margin: 0;
+    /* Remove extra margin to prevent overflow */
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
@@ -74,11 +76,21 @@ body {
     margin-top: 10px;
 }
 
+body.dark-mode .event-count {
+    color: #dddddde1;
+    /* Light text for dark background */
+}
+
 /* Flex alignment for description */
 .col-md-6.d-flex.align-items-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+body.dark-mode .image-changer {
+    border: none;
+    /* Removes border in dark mode */
 }
 
 .event-count {
@@ -94,21 +106,9 @@ body {
     color: black;
 }
 
-/* Footer styling */
-footer {
-    background-color: rgba(128, 128, 128, 0.15) !important; /* Adding !important ensures it overrides Bootstrap */
-    font-family: "Poppins", sans-serif !important;
-    padding: 10px 0 !important;
-    text-align: center;
-    width: 100% !important;
-}
 
 
-/* Footer heading styling */
-footer h2 {
-    color: #212529 !important;
-    margin-bottom: 10px;
-}
+
 
 /* Icon styles */
 .icons {
@@ -128,4 +128,137 @@ footer h2 {
     .description {
         padding: 10px;
     }
+}
+
+/* event.css */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode p {
+    color: #ffffff;
+}
+
+.navbar.dark-mode {
+    background-color: #333333;
+}
+
+.navbar.dark-mode .nav-link {
+    color: #ffffff;
+}
+
+.homePage-footer {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border-top: 2px solid #fff;
+    color: #fff;
+    padding-top: 15px;
+    font-size: 12px;
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: rgba(128, 128, 128, 0.15);
+    font-family: "Poppins", sans-serif;
+}
+
+.image-changer img {
+    border: 2px solid #ffffff;
+    /* Optional: Add white border to images */
+}
+
+/*darkmode*/
+.navbar .dropdown-menu {
+    background-color: white;
+    /* Light mode background color */
+    border: 1px solid #ccc;
+    /* Border for the dropdown */
+}
+
+/* Dark mode styles for dropdown menu */
+body.dark-mode .navbar .dropdown-menu {
+    background-color: black;
+    /* Dark mode background color */
+    border: 1px solid #444;
+    /* Dark border for better visibility */
+}
+
+/* Ensure text inside the dropdown menu is visible in dark mode */
+body.dark-mode .navbar .dropdown-menu .dropdown-item {
+    color: white;
+    /* White text for better contrast in dark mode */
+}
+
+/* Optional: Change text color on hover */
+body.dark-mode .navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #333;
+    /* Darker background when hovering */
+    color: #fff;
+    /* White text when hovering */
+}
+
+body.dark-mode #theme-toggle {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Hover state in dark mode */
+body.dark-mode #theme-toggle:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Navbar for Light Mode */
+/* Default Light Mode */
+#darkmode {
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light mode (default) button styles */
+#theme-toggle {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+/* Hover state in light mode */
+#theme-toggle:hover {
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+    /* Light background */
+    color: black;
+    /* Light text */
+}
+
+.navbar a.nav-link {
+    color: black !important;
+    /* Light mode link color */
+}
+
+/* Dark Mode */
+body.dark-mode .navbar {
+    background-color: black !important;
+    /* Dark background */
+    color: white !important;
+    /* Dark text */
+}
+
+body.dark-mode .navbar a.nav-link {
+    color: white !important;
+    /* Dark mode link color */
+}
+
+body.dark-mode .navbar a.nav-link:hover {
+    color: #ccc !important;
+    /* Hover color in dark mode */
 }

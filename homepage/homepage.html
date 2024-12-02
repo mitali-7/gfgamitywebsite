@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
   <title>GFG Amity Noida</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
@@ -14,8 +14,10 @@
 
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+
     <div class="container-fluid">
-      <img src="/assets/icon_img.png" alt="Gfg Amity Icon" class="navbar-logo me-3 mb-2" />
+      <img src="icon_img.png" alt="Gfg Amity Icon" class="navbar-logo me-3 mb-2" />
       <h4>GFG Student Chapter Amity University, Noida</h4>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,11 +35,10 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/eventpage/upcoming_events.html">Upcoming Events</a></li>
-              <li>
-                <a class="dropdown-item" href="/eventpage/previous_events.html">Previous Events</a>
-              </li>
+              <li><a class="dropdown-item" href="/eventpage/previous_events.html">Previous Events</a></li>
             </ul>
           </li>
+
           <li class="nav-item me-3">
             <a class="nav-link" href="/teampage/team.html">Team</a>
           </li>
@@ -49,6 +50,9 @@
           </li>
           <li class="nav-item me-3">
             <a class="nav-link" href="/contactUs/contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item me-3"></li>
+          <button id="theme-toggle" class="btn btn-outline-dark">Dark Mode</button>
           </li>
         </ul>
       </div>
@@ -101,14 +105,14 @@
     </div>
   </div>
   <div class="homePage-testimonials">
-    <h1>
+    <h1 id="darkmode">
       WHAT <span>STUDENTS</span> HAVE <br />TO <span>SAY</span> ABOUT US?
     </h1>
-    <div class="testimonials">
+    <div class="testimonials" id="textbox-darkmode">
       <div class="row">
         <div class="col-4">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body text-box">
               <h5 class="card-title">Shriya Shukla</h5>
               <h6 class="card-subtitle mb-2 text-muted">Roadmap To DSA</h6>
               <p class="card-text">
@@ -124,7 +128,7 @@
         </div>
         <div class="col-4">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body text-box">
               <h5 class="card-title">Jhanvi Gupta</h5>
               <h6 class="card-subtitle mb-2 text-muted">Code Conquest</h6>
               <p class="card-text">
@@ -139,7 +143,7 @@
         </div>
         <div class="col-4">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body text-box">
               <h5 class="card-title">Anika Dogra</h5>
               <h6 class="card-subtitle mb-2 text-muted">DSA Diaries 2.0</h6>
               <p class="card-text">
@@ -156,7 +160,7 @@
       <div class="row mt-2">
         <div class="col-4">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body text-box">
               <h5 class="card-title">Aditi Goyal</h5>
               <h6 class="card-subtitle mb-2 text-muted">Brain Busters</h6>
               <p class="card-text">
@@ -171,7 +175,7 @@
         </div>
         <div class="col-4">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body text-box">
               <h5 class="card-title">Danial A. Ahmad</h5>
               <h6 class="card-subtitle mb-2 text-muted">Amicode</h6>
               <p class="card-text">
@@ -186,7 +190,7 @@
         </div>
         <div class="col-4">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body text-box">
               <h5 class="card-title">Aaron J. Thomas</h5>
               <h6 class="card-subtitle mb-2 text-muted">Logic Building</h6>
               <p class="card-text">
@@ -202,51 +206,36 @@
       </div>
     </div>
   </div>
-  <div class="homePage-numbers">
-    <h1 class="text-center">
+  <div class="homePage-numbers container">
+    <h1 class="text-center font-weight-bold" id="darkmode">
       WE DON'T<span class="green"> SPEAK </span><br />OUR<span class="green">
         NUMBERS</span>
       DO!
     </h1>
-    <div class="testimonials">
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="number-Card">
-            <h3>Student Impact</h3>
-            <div class="graph-block">
-              <canvas id="lineChart"></canvas>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="number-Card">
-            <h3>Females Impact</h3>
-            <div class="graph-block">
-              <canvas id="pieChart1"></canvas>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="number-Card">
-            <h3>Repeat Rate</h3>
-            <div class="graph-block">
-              <canvas id="pieChart2"></canvas>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="number-Card">
-            <h3>Our Reach</h3>
-            <div class="graph-block">
-              <canvas id="reachLineChart" height="200" width="200"></canvas>
-            </div>
-          </div>
-        </div>
+    <div class="testimonials row">
+      <div class="col-lg-3 col-md-6 col-sm-12 number-Card  text-box">
+        <h3>Student Impact</h3>
+        <div><canvas id="lineChart" class="graph-block"></canvas></div>
+
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 number-Card text-box">
+        <h3>Females Impact</h3>
+        <canvas id="pieChart1" class="graph-block"></canvas> <!-- Add canvas for Pie Chart -->
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 number-Card text-box">
+        <h3>Event Repeat Rate</h3>
+        <canvas id="pieChart2" class="graph-block"></canvas> <!-- Add canvas for another Pie Chart -->
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 number-Card text-box">
+        <h3>Our Reach</h3>
+        <canvas id="reachLineChart" class="graph-block"></canvas> <!-- Add canvas for Reach chart -->
       </div>
     </div>
+
   </div>
+
   <div class="homePage-contact-box container">
-    <h1>
+    <h1 id="darkmode">
       Stay Connected, Stay Informed: Unleash the power of our tech-based
       newsletter!
     </h1>
@@ -324,10 +313,6 @@
             <a href="https://linktr.ee/gfg.studentchapter.amity" rel="noreferrer" target="_blank" class="url">GFG
               SC-Amity Team</a>
           </p>
-          <p class="mt-2">
-            This website is open-sourced 🙌<br />Get the code
-            <a href="https://github.com/GFGSC-GCET/website" class="url">here</a>
-          </p>
         </div>
       </div>
     </div>
@@ -341,6 +326,41 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap JS with Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const themeToggle = document.getElementById("theme-toggle");
+      const body = document.body;
+
+      // Check for saved theme in localStorage
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark-mode") {
+        body.classList.add("dark-mode");
+        themeToggle.textContent = "Light Mode";
+      }
+
+      themeToggle.addEventListener("click", function () {
+        body.classList.toggle("dark-mode");
+
+        // Update button text and save theme preference
+        if (body.classList.contains("dark-mode")) {
+          themeToggle.textContent = "Light Mode";
+          localStorage.setItem("theme", "dark-mode");
+        } else {
+          themeToggle.textContent = "Dark Mode";
+          localStorage.setItem("theme", "light-mode");
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
