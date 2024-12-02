@@ -258,20 +258,5 @@
     button.setAttribute('aria-label', `${currentTheme} Mode`);
   });
 </script>  
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    // Responsive Navbar Toggle
-    const menuIcon = document.querySelector('.menu-icon');
-    const navLinks = document.querySelector('.nav-links');
-
-    if (menuIcon && navLinks) {
-        menuIcon.addEventListener('click', () => {
-            navLinks.classList.toggle('active'); // Toggle the active class on click
-        });
-    } else {
-        console.error('Menu icon or nav links not found');
-    }
-});
-</script>
 </body>
 </html>
