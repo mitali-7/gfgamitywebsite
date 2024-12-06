@@ -74,34 +74,52 @@ footer {
 
 /* ----------------------------------------------------------------------------- */
 
-/* Default Light Theme */
-body {
+/* General styles for dark and light modes */
+body.light {
   background-color: #ffffff;
-  color: #000000;
-  transition: background-color 0.3s, color 0.3s;
+  color: #212529;
 }
 
-.navbar {
-  /* background-color: #f8f9fa; */
-  background-color: #000000;
+body.dark {
+  background-color: #131418;
+  color: white;
 }
 
-/* Dark Theme */
-body.dark-mode {
-  background-color: #000000;
-  color: #ffffff;
+/* Constant footer styling */
+footer.footer-row {
+  /* background-color: #3d8e41; */
+  background-color: rgba(128, 128, 128, 0.15);
+  opacity: 100%;
+  color: black;
+  padding: 20px;
+  text-align: center;
 }
 
-.navbar.dark-mode {
-  background-color: #343a40;
+/* Toggle button styling */
+.theme-toggle-btn {
+  background-color: #3d8e41;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
 }
 
-.btn-outline-dark {
-  border-color: #343a40;
-  color: #343a40;
+.theme-toggle-btn:hover {
+  opacity: 0.9;
 }
 
-body.dark-mode .btn-outline-dark {
-  border-color: #ffffff;
-  color: #ffffff;
+/* Default styles for footer */
+.footer-row {
+  background-color: #f8f9fa; /* Light background */
+  padding: 20px;
+}
+
+/* Footer text color for light mode */
+.footer-light-mode {
+  color: black;
+}
+
+/* Footer text color for dark mode */
+.footer-dark-mode {
+  color: white;
 }
