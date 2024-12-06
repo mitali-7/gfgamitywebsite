@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -70,4 +70,38 @@ footer {
 .image-grid a img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+} */
+
+/* ----------------------------------------------------------------------------- */
+
+/* Default Light Theme */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+  /* background-color: #f8f9fa; */
+  background-color: #000000;
+}
+
+/* Dark Theme */
+body.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.navbar.dark-mode {
+  background-color: #343a40;
+}
+
+.btn-outline-dark {
+  border-color: #343a40;
+  color: #343a40;
+}
+
+body.dark-mode .btn-outline-dark {
+  border-color: #ffffff;
+  color: #ffffff;
 }
