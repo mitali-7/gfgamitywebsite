@@ -119,7 +119,7 @@ body {
 .grid-container {
   display: grid !important;
   grid-template-columns: repeat(3, 1fr) !important; 
-  gap: 2rem !important; /* Reduced gap for tighter layout */
+  gap: 2rem !important; 
   width: 80% !important;
   max-width: 1200px !important;
   margin-top: 5rem !important;
@@ -139,10 +139,10 @@ body {
   overflow: hidden;
   position: relative;
   padding: 3px;
-  flex: 0 0 auto; /* Prevent cards from growing or shrinking */
+  flex: 0 0 auto; 
   width: 18rem; /* Consistent width */
   height: 27rem; /* Consistent height */
-  padding: 3px;
+  margin-bottom: 2rem;
 }
 /* Hover Effects for Card */
 .card:hover {
@@ -297,20 +297,21 @@ body {
 
   .card {
     width: 100%; /* Full width for mobile */
-    max-width: 300px; /* Limit maximum width */
-    height: 50px; /* Flexible height */
+    max-width: 400px; /* Limit maximum width */
+    height: 70px; /* Flexible height */
     margin: 0.5rem auto; /* Center cards with auto margin */
-    padding: 1rem;
+    padding: 2rem;
     box-shadow: 2px 2px 2px 2px rgb(174, 175, 172);
   }
 
   .imgbox {
-    height: 50%;
+    height: 100%;
+    width: 100%;
   }
 
   .imgbox img {
     width: 100%;
-    height: 200px;
+    height: 100%;
   }
 
   .details {
