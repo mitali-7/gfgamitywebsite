@@ -116,9 +116,6 @@ body.dark .image-changer img {
     color: #43a047;
     font-weight: bold;
 }
-footer{
-
-}
 /* Responsive adjustments */
 @media (max-width: 767px) {
     .description {
