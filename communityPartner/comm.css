@@ -85,6 +85,9 @@ body.dark {
   color: white;
 }
 
+body.dark img{
+  
+}
 /* Constant footer styling */
 footer.footer-row {
   /* background-color: #3d8e41; */
@@ -122,4 +125,9 @@ footer.footer-row {
 /* Footer text color for dark mode */
 .footer-dark-mode {
   color: white;
+}
+
+.image-grid img{
+  padding-right: 30px;
+  
 }
