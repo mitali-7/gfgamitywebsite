@@ -65,7 +65,8 @@ body {
 }
 
 body.dark .image-changer img {
-    border: none; /* Remove border in dark mode */
+    border: none;
+    /* Remove border in dark mode */
 }
 
 
@@ -116,6 +117,7 @@ body.dark .image-changer img {
     color: #43a047;
     font-weight: bold;
 }
+
 /* Responsive adjustments */
 @media (max-width: 767px) {
     .description {
@@ -153,230 +155,266 @@ body.dark .image-changer img {
     background-color: black;
     color: white;
 }
+
 body.dark {
     background-color: #131418 !important;
     color: white !important;
-  }
-  
-  body.dark .navbar {
+}
+
+body.dark .navbar {
     background-color: #1a1a1a !important;
     color: white;
-  }
+}
+
 @media (max-width: 992px) {
     body.dark .navbar-toggler {
-      border: none; /* Remove default border */
-      background: transparent; /* Make the background transparent */
+        border: none;
+        /* Remove default border */
+        background: transparent;
+        /* Make the background transparent */
     }
-  
+
     body.dark .navbar-toggler-icon {
-      width: 30px; /* Slightly larger for better visibility */
-      height: 6px; /* Slim bar for a modern look */
-      display: block;
-      position: relative;
-      background-color: white; /* White bars for dark mode */
-      border-radius: 5px; /* Rounded ends for modern design */
-      box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2); /* Subtle glow */
-      transition: all 0.3s ease; /* Smooth hover animation */
+        width: 30px;
+        /* Slightly larger for better visibility */
+        height: 6px;
+        /* Slim bar for a modern look */
+        display: block;
+        position: relative;
+        background-color: white;
+        /* White bars for dark mode */
+        border-radius: 5px;
+        /* Rounded ends for modern design */
+        box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+        /* Subtle glow */
+        transition: all 0.3s ease;
+        /* Smooth hover animation */
     }
-  
+
     body.dark .navbar-toggler-icon::before,
     body.dark .navbar-toggler-icon::after {
-      content: "";
-      width: 30px; /* Same width as the main bar */
-      height: 4px; /* Same height */
-      background-color: white;
-      border-radius: 5px;
-      position: absolute;
-      left: 0;
-      transition: all 0.3s ease; /* Smooth transition for animations */
+        content: "";
+        width: 30px;
+        /* Same width as the main bar */
+        height: 4px;
+        /* Same height */
+        background-color: white;
+        border-radius: 5px;
+        position: absolute;
+        left: 0;
+        transition: all 0.3s ease;
+        /* Smooth transition for animations */
     }
-  
+
     body.dark .navbar-toggler-icon::before {
-      top: -8px; /* Positioned above the main bar */
+        top: -8px;
+        /* Positioned above the main bar */
     }
-  
+
     body.dark .navbar-toggler-icon::after {
-      top: 8px; /* Positioned below the main bar */
+        top: 8px;
+        /* Positioned below the main bar */
     }
-  
+
     /* Hover Effect for Navbar Toggler */
     body.dark .navbar-toggler:hover .navbar-toggler-icon {
-      background-color: #f6f0f0; /* Slightly lighter bar color on hover */
+        background-color: #f6f0f0;
+        /* Slightly lighter bar color on hover */
     }
-  
+
     body.dark .navbar-toggler:hover .navbar-toggler-icon::before,
     body.dark .navbar-toggler:hover .navbar-toggler-icon::after {
-      background-color: #ccc; /* Matching hover color */
+        background-color: #ccc;
+        /* Matching hover color */
     }
-  }
-  /* General Button Styling */
+}
+
+/* General Button Styling */
 #theme-toggle {
-    background-color: #43a047; /* Green background */
-    color: white; /* White text */
-    font-family: 'Poppins', sans-serif; /* Matches overall font style */
-    font-size: 1rem; /* Adjust font size */
-    font-weight: 500; /* Medium-weight text */
-    padding: 10px 20px; /* Add padding for a comfortable click area */
-    border: none; /* Remove border */
-    border-radius: 6px; /* Slightly rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
-  }
-  
-  /* Hover and Active Effects */
-  #theme-toggle:hover {
-    background-color: #3d8e41; /* Slightly darker green on hover */
-  }
-  
-  #theme-toggle:active {
-    transform: scale(0.97); /* Slight shrink effect on click */
-  }
-  
-  /* Focus Styling for Accessibility */
-  #theme-toggle:focus {
-    outline: none; /* Remove focus outline */
-  }
-  
-  /* Dark Mode Button Styling */
-  body.dark #theme-toggle {
-    background-color: #1a1a1a; /* Dark background in dark mode */
-    color: #43a047; /* Green text */
-  }
-  
-  body.dark #theme-toggle:hover {
-    background-color: #333; /* Slightly lighter dark background on hover */
-  }
+    background-color: #43a047;
+    /* Green background */
+    color: white;
+    /* White text */
+    font-family: 'Poppins', sans-serif;
+    /* Matches overall font style */
+    font-size: 1rem;
+    /* Adjust font size */
+    font-weight: 500;
+    /* Medium-weight text */
+    padding: 10px 20px;
+    /* Add padding for a comfortable click area */
+    border: none;
+    /* Remove border */
+    border-radius: 6px;
+    /* Slightly rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Smooth transitions */
+}
+
+/* Hover and Active Effects */
+#theme-toggle:hover {
+    background-color: #3d8e41;
+    /* Slightly darker green on hover */
+}
+
+#theme-toggle:active {
+    transform: scale(0.97);
+    /* Slight shrink effect on click */
+}
+
+/* Focus Styling for Accessibility */
+#theme-toggle:focus {
+    outline: none;
+    /* Remove focus outline */
+}
+
+/* Dark Mode Button Styling */
+body.dark #theme-toggle {
+    background-color: #1a1a1a;
+    /* Dark background in dark mode */
+    color: #43a047;
+    /* Green text */
+}
+
+body.dark #theme-toggle:hover {
+    background-color: #333;
+    /* Slightly lighter dark background on hover */
+}
+
 /* Responsive Dark Theme Adjustments */
 @media (max-width: 768px) {
     body.dark .nav-links {
-      background: #1a1a1a !important;
-      overflow-y: auto;
-      padding: 1rem;
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5) !important;
-      max-height: 200px;
+        background: #1a1a1a !important;
+        overflow-y: auto;
+        padding: 1rem;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5) !important;
+        max-height: 200px;
     }
-    
+
     body.dark .nav-links a {
-      display: block;
-      padding: 0.5rem;
-      border-bottom: 1px solid #333;
+        display: block;
+        padding: 0.5rem;
+        border-bottom: 1px solid #333;
     }
-    
+
     body.dark .nav-links a:last-child {
-      border-bottom: none;
+        border-bottom: none;
     }
 }
+
 body.dark .nav-item.dropdown .dropdown-menu {
     background-color: black !important;
     color: white !important;
-    border: none; /* Optional: Removes border for a cleaner look */
+    border: none;
+    /* Optional: Removes border for a cleaner look */
 }
-  
+
 body.dark .nav-item.dropdown .dropdown-item {
     color: white !important;
 }
-  
+
 body.dark .nav-item.dropdown .dropdown-item:hover {
-    background-color: #43a047; /* Highlight color on hover */
+    background-color: #43a047;
+    /* Highlight color on hover */
 }
+
 body.dark .navbar a {
     color: white !important;
 }
-  
+
 body.dark .navbar a:hover {
     color: #43a047 !important;
 }
 
-/* Dark Theme Footer Styles */
-body.dark footer {
-    background-color: rgba(128, 128, 128, 0.15);
-    color: white;
-}
-  
-body.dark .footer-section h4 {
-    color: white;
-}
-  
-body.dark .footer-section ul li a {
-    color: #ddd;
-}
-  
-body.dark .footer-section ul li a:hover {
-    color: #43a047;
-}
-  
 body.dark .social-icons a {
     color: white;
 }
-  
+
 body.dark .social-icons a:hover {
     color: #43a047;
 }
-  
+
 body.dark .copyright {
     color: #aaa;
     border-top-color: #444;
 }
+
 /* Dark theme text description class */
 body.dark .description {
-    color: #f7f2f2; /* Light gray text for better readability */
-    background-color: #2a2a2a0f; /* Dark background for the description section */
-    padding: 15px; /* Add some padding for better spacing */
-    border-radius: 6px; /* Rounded corners for a softer look */
-    text-align: justify; /* Maintain justified text alignment */
-    font-size: 20px; /* Adjust font size for readability */
-    line-height: 1.6; /* Increase line height for better spacing */
+    color: #f7f2f2;
+    /* Light gray text for better readability */
+    background-color: #2a2a2a0f;
+    /* Dark background for the description section */
+    padding: 15px;
+    /* Add some padding for better spacing */
+    border-radius: 6px;
+    /* Rounded corners for a softer look */
+    text-align: justify;
+    /* Maintain justified text alignment */
+    font-size: 20px;
+    /* Adjust font size for readability */
+    line-height: 1.6;
+    /* Increase line height for better spacing */
 }
+
 body.dark .event-count {
-    color: #f7f2f2; /* Light gray text for better readability */
-    background-color: #2a2a2a0f; /* Dark background for the description section */
-    padding: 15px; /* Add some padding for better spacing */
-    border-radius: 6px; /* Rounded corners for a softer look */
-    text-align: justify; /* Maintain justified text alignment */
-    font-size: 20px; /* Adjust font size for readability */
-    line-height: 1.6; /* Increase line height for better spacing */
+    color: #f7f2f2;
+    /* Light gray text for better readability */
+    background-color: #2a2a2a0f;
+    /* Dark background for the description section */
+    padding: 15px;
+    /* Add some padding for better spacing */
+    border-radius: 6px;
+    /* Rounded corners for a softer look */
+    text-align: justify;
+    /* Maintain justified text alignment */
+    font-size: 20px;
+    /* Adjust font size for readability */
+    line-height: 1.6;
+    /* Increase line height for better spacing */
 }
 
 /* Media Queries for Small Screens */
 @media (max-width: 767px) {
+
     /* Adjust the height of the image changer */
     .image-changer {
-        height: 400px; /* Decrease height for smaller screens */
+        height: 400px;
+        /* Decrease height for smaller screens */
         margin-top: 2rem;
     }
 
     /* Adjust the images inside the image changer */
     .image-changer img {
-        object-fit:fill; /* Change to cover to fill the space */
+        object-fit: fill;
+        /* Change to cover to fill the space */
     }
 
     /* Adjust description section for better spacing */
     .description {
-        font-size: 18px; /* Smaller font size for better readability */
-        padding: 10px; /* Add padding for better spacing */
-        margin-top: 10px; /* Add margin to separate from carousel */
+        font-size: 18px;
+        /* Smaller font size for better readability */
+        padding: 10px;
+        /* Add padding for better spacing */
+        margin-top: 10px;
+        /* Add margin to separate from carousel */
     }
 
     .row {
-        margin-top: 10rem;  /* Adjust as needed */
-        margin-bottom: 20rem; /* Adjust as needed */
+        margin-top: 10rem;
+        /* Adjust as needed */
+        margin-bottom: 20rem;
+        /* Adjust as needed */
     }
 
     /* Adjust event count styling for smaller screens */
     .event-count {
-        font-size: 18px; /* Smaller font size */
-        margin-top: 2px; /* Reduce margin */
+        font-size: 18px;
+        /* Smaller font size */
+        margin-top: 2px;
+        /* Reduce margin */
     }
 
-    /* Reduce padding and height of footer */
-    footer {
-        padding: 0; /* Decrease top and bottom padding */ /* Adjust height to fit content */
-        background-color: #b0b4b1;
-        min-height: min-content;
-    }
-
-    /* Adjust footer column styles */
-    footer .col {
-        padding: 0px; /* Reduce padding inside footer columns */
-    }
 }

@@ -35,17 +35,24 @@ body {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
+    /* Full viewport height */
     width: 100% !important;
-    gap: 4rem !important; /* Space between lead cards */
-    margin: 0 !important; /* Remove default margin */
-    padding: 0 !important; /* Remove default padding */
+    gap: 4rem !important;
+    /* Space between lead cards */
+    margin: 0 !important;
+    /* Remove default margin */
+    padding: 0 !important;
+    /* Remove default padding */
   }
 
   .grid-container.lead-container .card.lead {
-    flex: 0 0 auto; /* Prevent cards from growing or shrinking */
-    width: 18rem; /* Consistent width */
-    height: 27rem; /* Consistent height */
+    flex: 0 0 auto;
+    /* Prevent cards from growing or shrinking */
+    width: 18rem;
+    /* Consistent width */
+    height: 27rem;
+    /* Consistent height */
     padding: 3px;
   }
 
@@ -71,19 +78,25 @@ body {
     width: 95% !important;
   }
 }
+
 /* Navbar Improvements */
 .navbar {
-  width: 100%; /* Ensure navbar spans full width */
-  padding: 0 15px; /* Add some padding on sides */
-  box-sizing: border-box; /* Include padding in width calculation */
+  width: 100%;
+  /* Ensure navbar spans full width */
+  padding: 0 15px;
+  /* Add some padding on sides */
+  box-sizing: border-box;
+  /* Include padding in width calculation */
 }
 
 .navbar-toggler {
-  border: none; /* Remove border */
+  border: none;
+  /* Remove border */
 }
 
 .navbar-toggler-icon {
-  background-color: white; /* Set a contrasting background color for the icon */
+  background-color: white;
+  /* Set a contrasting background color for the icon */
 }
 
 .nav-links {
@@ -118,8 +131,8 @@ body {
 /* Grid Container Styles */
 .grid-container {
   display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important; 
-  gap: 2rem !important; 
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 2rem !important;
   width: 80% !important;
   max-width: 1200px !important;
   margin-top: 5rem !important;
@@ -134,26 +147,30 @@ body {
   align-items: center;
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 5px 5px 5px 5px rgb(174, 175, 172);
-  border-radius: 8px; 
+  border-radius: 8px;
   transition: transform 0.5s;
   overflow: hidden;
   position: relative;
   padding: 3px;
-  flex: 0 0 auto; 
-  width: 18rem; /* Consistent width */
-  height: 27rem; /* Consistent height */
+  flex: 0 0 auto;
+  width: 18rem;
+  /* Consistent width */
+  height: 27rem;
+  /* Consistent height */
   margin-bottom: 2rem;
 }
+
 /* Hover Effects for Card */
 .card:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
   box-shadow: none;
 }
 
 /* Image Box Styles */
 .imgbox {
   width: 100%;
-  height: 70%; /* Fixed height for image area */
+  height: 70%;
+  /* Fixed height for image area */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,19 +181,22 @@ body {
 .imgbox img {
   width: 98%;
   height: 100%;
-  object-fit: cover; /* Ensures image fills box without distortion */
+  object-fit: cover;
+  /* Ensures image fills box without distortion */
   border-radius: 8px;
   transition: transform 0.5s;
 }
 
 /* Hover Effects for Image */
 .card:hover .imgbox img {
-  transform: scale(1.1); /* Scale up the image */
+  transform: scale(1.1);
+  /* Scale up the image */
 }
 
 /* Details Container */
 .details {
-  position: relative; /* Changed to relative to position below the image */
+  position: relative;
+  /* Changed to relative to position below the image */
   width: 100%;
   text-align: center;
   background: rgba(255, 255, 255, 0.7);
@@ -184,22 +204,26 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Center items vertically */
+  justify-content: center;
+  /* Center items vertically */
   transition: transform 0.5s, opacity 0.3s;
-  opacity: 1; /* Make details always visible */
+  opacity: 1;
+  /* Make details always visible */
 }
 
 /* Name Styles */
 .name {
   font-size: 1.2rem;
-  color: black; /* Black color for the font */
+  color: black;
+  /* Black color for the font */
   margin-bottom: 5px;
 }
 
 /* Designation Styles */
 .designation {
   font-size: 1rem;
-  color: black; /* Black color for the font */
+  color: black;
+  /* Black color for the font */
   margin-top: 5px;
 }
 
@@ -208,15 +232,19 @@ body {
   display: flex;
   gap: 10px;
   margin-top: 10px;
-  opacity: 0; /* Hidden by default */
+  opacity: 0;
+  /* Hidden by default */
   transition: opacity 0.3s;
-  justify-content: center; /* Center icons horizontally */
-  align-items: center; /* Center icons vertically */
+  justify-content: center;
+  /* Center icons horizontally */
+  align-items: center;
+  /* Center icons vertically */
 }
 
 /* Hover Effects for Icons */
 .card:hover .icons {
-  opacity: 1; /* Show icons on hover */
+  opacity: 1;
+  /* Show icons on hover */
 }
 
 /* Icons Styles */
@@ -233,6 +261,7 @@ body {
 
 /* Media Queries for Different Screen Sizes */
 @media (max-width: 768px) {
+
   /* Navbar Responsiveness */
   .nav-links {
     flex-direction: column;
@@ -248,20 +277,25 @@ body {
   /* Grid and Card Responsiveness */
   .grid-container {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 1rem !important; /* Reduce gap between cards */
+    gap: 1rem !important;
+    /* Reduce gap between cards */
     width: 90% !important;
     margin-top: 3rem !important;
   }
 
   .card {
-    width: 14rem; /* Make cards slightly smaller */
-    height: 14rem; /* Reduce card height */
-    margin: 0.5rem; /* Add some margin between cards */
+    width: 14rem;
+    /* Make cards slightly smaller */
+    height: 14rem;
+    /* Reduce card height */
+    margin: 0.5rem;
+    /* Add some margin between cards */
     box-shadow: 3px 3px 3px 3px rgb(174, 175, 172);
   }
 
   .imgbox {
-    height: 55%; /* Adjust image area height */
+    height: 55%;
+    /* Adjust image area height */
     margin-bottom: 2px;
   }
 
@@ -296,10 +330,14 @@ body {
   }
 
   .card {
-    width: 100%; /* Full width for mobile */
-    max-width: 400px; /* Limit maximum width */
-    height: 70px; /* Flexible height */
-    margin: 0.5rem auto; /* Center cards with auto margin */
+    width: 100%;
+    /* Full width for mobile */
+    max-width: 400px;
+    /* Limit maximum width */
+    height: 70px;
+    /* Flexible height */
+    margin: 0.5rem auto;
+    /* Center cards with auto margin */
     padding: 2rem;
     box-shadow: 2px 2px 2px 2px rgb(174, 175, 172);
   }
@@ -349,49 +387,64 @@ body.dark .navbar {
 /* Beautified Navbar Toggler for Small Screens in Dark Mode */
 @media (max-width: 992px) {
   body.dark .navbar-toggler {
-    border: none; /* Remove default border */
-    background: transparent; /* Make the background transparent */
+    border: none;
+    /* Remove default border */
+    background: transparent;
+    /* Make the background transparent */
   }
 
   body.dark .navbar-toggler-icon {
-    width: 30px; /* Slightly larger for better visibility */
-    height: 6px; /* Slim bar for a modern look */
+    width: 30px;
+    /* Slightly larger for better visibility */
+    height: 6px;
+    /* Slim bar for a modern look */
     display: block;
     position: relative;
-    background-color: white; /* White bars for dark mode */
-    border-radius: 5px; /* Rounded ends for modern design */
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2); /* Subtle glow */
-    transition: all 0.3s ease; /* Smooth hover animation */
+    background-color: white;
+    /* White bars for dark mode */
+    border-radius: 5px;
+    /* Rounded ends for modern design */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+    /* Subtle glow */
+    transition: all 0.3s ease;
+    /* Smooth hover animation */
   }
 
   body.dark .navbar-toggler-icon::before,
   body.dark .navbar-toggler-icon::after {
     content: "";
-    width: 30px; /* Same width as the main bar */
-    height: 4px; /* Same height */
+    width: 30px;
+    /* Same width as the main bar */
+    height: 4px;
+    /* Same height */
     background-color: white;
     border-radius: 5px;
     position: absolute;
     left: 0;
-    transition: all 0.3s ease; /* Smooth transition for animations */
+    transition: all 0.3s ease;
+    /* Smooth transition for animations */
   }
 
   body.dark .navbar-toggler-icon::before {
-    top: -8px; /* Positioned above the main bar */
+    top: -8px;
+    /* Positioned above the main bar */
   }
 
   body.dark .navbar-toggler-icon::after {
-    top: 8px; /* Positioned below the main bar */
+    top: 8px;
+    /* Positioned below the main bar */
   }
 
   /* Hover Effect for Navbar Toggler */
   body.dark .navbar-toggler:hover .navbar-toggler-icon {
-    background-color: #f6f0f0; /* Slightly lighter bar color on hover */
+    background-color: #f6f0f0;
+    /* Slightly lighter bar color on hover */
   }
 
   body.dark .navbar-toggler:hover .navbar-toggler-icon::before,
   body.dark .navbar-toggler:hover .navbar-toggler-icon::after {
-    background-color: #ccc; /* Matching hover color */
+    background-color: #ccc;
+    /* Matching hover color */
   }
 }
 
@@ -404,55 +457,6 @@ body.dark .navbar a:hover {
   color: #43a047 !important;
 }
 
-/* Footer Styles */
-footer {
-  width: 100%; /* Ensure full screen width */
-  background-color: #f8f9fa; /* Light background color */
-  padding: 20px 0;
-  margin-top: auto; /* Push footer to bottom */
-  box-sizing: border-box; /* Include padding in width calculation */
-}
-
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.footer-section {
-  flex: 1;
-  min-width: 200px;
-  margin: 10px;
-  text-align: center;
-}
-
-.footer-section h4 {
-  color: #333;
-  margin-bottom: 15px;
-  font-size: 1.2rem;
-}
-
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-section ul li {
-  margin-bottom: 10px;
-}
-
-.footer-section ul li a {
-  color: #666;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-section ul li a:hover {
-  color: #43a047;
-}
 
 .social-icons {
   display: flex;
@@ -478,23 +482,6 @@ footer {
   color: #666;
 }
 
-/* Dark Theme Footer Styles */
-body.dark footer {
-  background-color: rgba(128, 128, 128, 0.15);
-  color: white;
-}
-
-body.dark .footer-section h4 {
-  color: white;
-}
-
-body.dark .footer-section ul li a {
-  color: #ddd;
-}
-
-body.dark .footer-section ul li a:hover {
-  color: #43a047;
-}
 
 body.dark .social-icons a {
   color: white;
@@ -509,18 +496,6 @@ body.dark .copyright {
   border-top-color: #444;
 }
 
-/* Responsive Footer */
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-section {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
 
 /* Responsive Dark Theme Adjustments */
 @media (max-width: 768px) {
@@ -531,21 +506,23 @@ body.dark .copyright {
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5) !important;
     max-height: 200px;
   }
-  
+
   body.dark .nav-links a {
     display: block;
     padding: 0.5rem;
     border-bottom: 1px solid #333;
   }
-  
+
   body.dark .nav-links a:last-child {
     border-bottom: none;
   }
 }
+
 body.dark .nav-item.dropdown .dropdown-menu {
   background-color: black !important;
   color: white !important;
-  border: none; /* Optional: Removes border for a cleaner look */
+  border: none;
+  /* Optional: Removes border for a cleaner look */
 }
 
 body.dark .nav-item.dropdown .dropdown-item {
@@ -553,7 +530,8 @@ body.dark .nav-item.dropdown .dropdown-item {
 }
 
 body.dark .nav-item.dropdown .dropdown-item:hover {
-  background-color: #43a047; /* Highlight color on hover */
+  background-color: #43a047;
+  /* Highlight color on hover */
 }
 
 @media (max-width: 480px) {
@@ -565,38 +543,54 @@ body.dark .nav-item.dropdown .dropdown-item:hover {
 
 /* General Button Styling */
 #theme-toggle {
-  background-color: #43a047; /* Green background */
-  color: white; /* White text */
-  font-family: 'Poppins', sans-serif; /* Matches overall font style */
-  font-size: 1rem; /* Adjust font size */
-  font-weight: 500; /* Medium-weight text */
-  padding: 10px 20px; /* Add padding for a comfortable click area */
-  border: none; /* Remove border */
-  border-radius: 6px; /* Slightly rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  background-color: #43a047;
+  /* Green background */
+  color: white;
+  /* White text */
+  font-family: 'Poppins', sans-serif;
+  /* Matches overall font style */
+  font-size: 1rem;
+  /* Adjust font size */
+  font-weight: 500;
+  /* Medium-weight text */
+  padding: 10px 20px;
+  /* Add padding for a comfortable click area */
+  border: none;
+  /* Remove border */
+  border-radius: 6px;
+  /* Slightly rounded corners */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s;
+  /* Smooth transitions */
 }
 
 /* Hover and Active Effects */
 #theme-toggle:hover {
-  background-color: #3d8e41; /* Slightly darker green on hover */
+  background-color: #3d8e41;
+  /* Slightly darker green on hover */
 }
 
 #theme-toggle:active {
-  transform: scale(0.97); /* Slight shrink effect on click */
+  transform: scale(0.97);
+  /* Slight shrink effect on click */
 }
 
 /* Focus Styling for Accessibility */
 #theme-toggle:focus {
-  outline: none; /* Remove focus outline */
+  outline: none;
+  /* Remove focus outline */
 }
 
 /* Dark Mode Button Styling */
 body.dark #theme-toggle {
-  background-color: #1a1a1a; /* Dark background in dark mode */
-  color: #43a047; /* Green text */
+  background-color: #1a1a1a;
+  /* Dark background in dark mode */
+  color: #43a047;
+  /* Green text */
 }
 
 body.dark #theme-toggle:hover {
-  background-color: #333; /* Slightly lighter dark background on hover */
+  background-color: #333;
+  /* Slightly lighter dark background on hover */
 }

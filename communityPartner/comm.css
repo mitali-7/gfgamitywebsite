@@ -45,10 +45,7 @@ h1 {
   color: #43a047;
   font-weight: bold;
 }
-footer {
-  background-color: rgba(128, 128, 128, 0.15);
-  font-family: "Poppins", sans-serif;
-}
+
 .text-end {
   text-align: right;
 }
@@ -85,18 +82,7 @@ body.dark {
   color: white;
 }
 
-body.dark img{
-  
-}
-/* Constant footer styling */
-footer.footer-row {
-  /* background-color: #3d8e41; */
-  background-color: rgba(128, 128, 128, 0.15);
-  opacity: 100%;
-  color: black;
-  padding: 20px;
-  text-align: center;
-}
+
 
 /* Toggle button styling */
 .theme-toggle-btn {
@@ -111,21 +97,7 @@ footer.footer-row {
   opacity: 0.9;
 }
 
-/* Default styles for footer */
-.footer-row {
-  background-color: #f8f9fa; /* Light background */
-  padding: 20px;
-}
 
-/* Footer text color for light mode */
-.footer-light-mode {
-  color: black;
-}
-
-/* Footer text color for dark mode */
-.footer-dark-mode {
-  color: white;
-}
 
 .image-grid img{
   padding-right: 30px;

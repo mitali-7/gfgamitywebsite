@@ -1,0 +1,17 @@
+footer {
+    background-color: rgba(128, 128, 128, 0.15);
+    font-family: "Poppins", sans-serif;
+}
+
+.homePage-footer {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border-top: 2px solid #fff;
+    color: #fff;
+    padding-top: 15px;
+    font-size: 12px;
+    padding-bottom: 15px;
+    max-height: 100px;
+    overflow: hidden;
+}

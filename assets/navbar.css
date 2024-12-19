@@ -1,43 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-.navbar{
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 25px;
-}
-.navbar-logo{
-    width: 60px;
-    height: 50px;
+.navbar .dropdown-menu {
+    background-color: white !important;
+    /* Light mode background color */
+    border: 1px solid #ccc !important;
+    /* Border for the dropdown */
 }
 
-.nav-link button:hover{
-    background-color: #224824;
+/* Dark mode styles for dropdown menu */
+body.dark-mode .navbar .dropdown-menu {
+    background-color: black !important;
+    /* Dark mode background color */
+    border: 1px solid #444 !important;
+    /* Dark border for better visibility */
 }
-@media screen and (max-width: 1400px){
-    .navbar{
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-   
+
+/* Ensure text inside the dropdown menu is visible in dark mode */
+body.dark-mode .navbar .dropdown-menu .dropdown-item {
+    color: white !important;
+    /* White text for better contrast in dark mode */
 }
-.navbar-toggler{
-    color: white;
+
+/* Optional: Change text color on hover */
+body.dark-mode .navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #333 !important;
+    /* Darker background when hovering */
+    color: #fff !important;
+    /* White text when hovering */
 }
-@media screen and (max-width: 490px){
-    .navbar{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .navbar-brand img{
-        width: 250px;
-    }
+
+#darkmode {
+    color: black !important;
+    transition: background-color 0.3s, color 0.3s !important;
 }
-@media screen and (max-width: 370px){
-    .navbar{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .navbar-brand img{
-        width: 200px;
-    }
+
+/* Light mode (default) button styles */
+#theme-toggle {
+    background-color: transparent !important;
+    color: black !important;
+    border: 1px solid black !important;
+}
+
+/* Hover state in light mode */
+#theme-toggle:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+.navbar-logo {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+/* Default Light Mode */
+.navbar {
+    background-color: #f8f9fa !important;
+    /* Light background */
+    color: black !important;
+    /* Light text */
+}
+
+.navbar a.nav-link {
+    color: black !important;
+    /* Light mode link color */
+}
+
+/* Dark Mode */
+body.dark-mode .navbar {
+    background-color: black !important;
+    /* Dark background */
+    color: white !important;
+    /* Dark text */
+}
+
+body.dark-mode .navbar a.nav-link {
+    color: white !important;
+    /* Dark mode link color */
+}
+
+body.dark-mode .navbar a.nav-link:hover {
+    color: #ccc !important;
+    /* Hover color in dark mode */
 }
