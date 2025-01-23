@@ -83,7 +83,6 @@ body.dark {
 }
 
 
-
 /* Toggle button styling */
 .theme-toggle-btn {
   background-color: #3d8e41;
@@ -102,4 +101,13 @@ body.dark {
 .image-grid img{
   padding-right: 30px;
   
+}
+
+
+nav {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-row {
+  transition: color 0.3s;
 }
