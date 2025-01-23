@@ -416,5 +416,162 @@ body.dark .event-count {
         margin-top: 2px;
         /* Reduce margin */
     }
-
 }
+/* Make the navbar h4 white in dark mode */
+body.dark .navbar h4 {
+  color: white !important; /* Set the h4 text to white in dark mode */
+}
+
+/* Make the navbar button text white in dark mode */
+body.dark .navbar button#theme-toggle {
+  color: white !important; /* Set the button text to white in dark mode */
+}
+
+/* Footer Styles */
+footer {
+    width: 100%; /* Ensure full screen width */
+    background-color: #f8f9fa; /* Light mode background */
+    padding: 10px 20px; /* Reduce padding to decrease height */
+    margin-top: auto; /* Push footer to the bottom */
+    display: flex;
+    justify-content: space-between; /* Distribute sections evenly */
+    align-items: flex-start;
+    box-sizing: border-box; /* Include padding in width calculation */
+    border-top: 1px solid #ddd; /* Subtle border at the top */
+  }
+
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsive layout */
+    justify-content: space-between; /* Distribute sections evenly */
+    align-items: flex-start; /* Align items at the top */
+    background-color: #f8f9fa; /* Light mode background */
+    padding: 10px 20px; /* Padding around the content */
+    margin-top: auto; /* Push footer to the bottom of the page */
+    box-sizing: border-box; /* Include padding in width and height calculation */
+    border-top: 1px solid #ddd; /* Subtle border at the top */
+}
+  
+  .footer-section {
+    flex: 1; /* Equal width for all sections */
+    margin: 0 10px; /* Space between sections */
+    text-align: center; /* Center-align text in sections */
+  }
+  
+  .footer-section.left {
+    text-align: left; /* Align content to the left for the left section */
+  }
+  
+  .footer-section.center {
+    text-align: center; /* Center-align content for the middle section */
+  }
+  
+  .footer-section.right {
+    text-align: right; /* Align content to the right for the right section */
+  }
+  
+  .footer-section h4 {
+    font-size: 1rem;
+    color: #333; /* Light mode text color */
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #666; /* Subtle text color for light mode */
+  }
+  
+  .footer-section a {
+    color: #43a047;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section a:hover {
+    color: #2f8c45; /* Darker green on hover */
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust gap between icons */
+    margin-top: 5px;
+  }
+  
+  .social-icons a {
+    font-size: 1.2rem;
+    color: #333; /* Light mode icon color */
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #43a047;
+  }
+  
+  /* Copyright Section */
+  .copyright {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #666;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Dark Theme Footer Styles */
+  body.dark footer {
+    background-color: rgba(19, 20, 24, 0.9); /* Dark mode background */
+    color: white;
+    border-top: 1px solid #444;
+  }
+  
+  body.dark .footer-section h4 {
+    color: white;
+  }
+  
+  body.dark .footer-section p {
+    color: #aaa;
+  }
+  
+  body.dark .footer-section a {
+    color: #43a047; /* Green links for dark mode */
+  }
+  
+  body.dark .footer-section a:hover {
+    color: #2f8c45;
+  }
+  
+  body.dark .social-icons a {
+    color: white; /* White icons for dark mode */
+  }
+  
+  body.dark .social-icons a:hover {
+    color: #43a047; /* Green on hover */
+  }
+  
+  body.dark .copyright {
+    color: #aaa;
+    border-top-color: #444;
+  }
+  
+  /* Responsive Footer Adjustments */
+  @media (max-width: 768px) {
+    footer {
+      flex-direction: column; /* Stack sections vertically */
+      align-items: center;
+      text-align: center;
+      padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+  
+    .footer-section {
+      margin-bottom: 15px; /* Add space between stacked sections */
+      text-align: center; /* Center-align all sections */
+    }
+  
+    .social-icons {
+      justify-content: center; /* Center-align icons */
+    }
+  }
+  
+  
