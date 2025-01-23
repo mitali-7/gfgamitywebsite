@@ -534,3 +534,76 @@ footer {
         margin-right: 0;
     }
 }
+/* Dark Mode Footer Styles */
+body.dark footer {
+    background-color: #131418; /* Dark background */
+    padding: 20px 20px;
+    border-top: 1px solid #444; /* Subtle border for dark mode */
+    color: #fff; /* Default text color for dark mode */
+}
+
+/* Column styles for dark mode */
+body.dark .footer-column h3 {
+    color: #fff; /* White for headings */
+}
+
+body.dark .footer-column h2 {
+    color: #fff; /* White for subheadings */
+}
+
+body.dark .footer-column p {
+    color: #aaa; /* Light grey for paragraph text */
+}
+
+body.dark .footer-column a {
+    color: #007bff; /* Keep links blue */
+}
+
+body.dark .footer-column a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Adjust GFG logo size and appearance for dark mode */
+body.dark .footer-logo img {
+    filter: brightness(1); /* Keep logo fully visible */
+}
+
+/* Icon styles for dark mode */
+body.dark .footer-icons a {
+    color: #43a047; /* Green icons */
+}
+
+body.dark .footer-icons a:hover {
+    color: #2f8c45; /* Darker green on hover */
+}
+
+/* Center alignment adjustments for dark mode */
+body.dark .footer-center {
+    color: #fff; /* Ensure center text is white in dark mode */
+}
+
+/* Right alignment adjustments for dark mode */
+body.dark .footer-right {
+    color: #aaa; /* Light grey for right-aligned text */
+}
+
+body.dark .footer-right a {
+    color: #007bff; /* Keep links blue in the right column */
+}
+
+body.dark .footer-right a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive adjustments for dark mode */
+@media (max-width: 768px) {
+    body.dark footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    body.dark .footer-column {
+        margin-bottom: 20px;
+    }
+}
