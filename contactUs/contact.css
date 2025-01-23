@@ -36,3 +36,8 @@ iframe {
   background: #3d8e41;
 }
 
+/* Make the navbar button text white in dark mode */
+body.dark-mode .navbar button#theme-toggle {
+  color: white !important; /* Set the button text to white in dark mode */
+  border: 1px solid white !important; /* Optional: Change the button border to white */
+}
