@@ -586,12 +586,10 @@ body.dark .nav-item.dropdown .dropdown-item:hover {
   transform: scale(0.97); /* Slight shrink effect on click */
 }
 
-/* Focus Styling for Accessibility */
 #theme-toggle:focus {
   outline: none; /* Remove focus outline */
 }
 
-/* Dark Mode Button Styling */
 body.dark #theme-toggle {
   background-color: #1a1a1a; /* Dark background in dark mode */
   color: #43a047; /* Green text */
@@ -600,12 +598,10 @@ body.dark #theme-toggle {
 body.dark #theme-toggle:hover {
   background-color: #333; /* Slightly lighter dark background on hover */
 }
-/* Make the navbar h4 white in dark mode */
 body.dark .navbar h4 {
   color: white !important; /* Set the h4 text to white in dark mode */
 }
 
-/* Make the navbar button text white in dark mode */
 body.dark .navbar button#theme-toggle {
   color: white !important; /* Set the button text to white in dark mode */
 }
