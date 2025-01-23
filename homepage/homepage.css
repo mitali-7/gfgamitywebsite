@@ -121,14 +121,14 @@ body {
 }
 
 .homePage-landing-buttons-button-1 button,
-.homePage-landing-buttons-button-2 button:hover {
+.homePage-landing-buttons-button-2 button {
   background-color: transparent;
   border: 2px solid #43a047;
   border-radius: 100px;
 }
 
-.h omePage-landing-buttons-button-2 button,
-.h omePage-landing-buttons-button-1 button:hover {
+.homePage-landing-buttons-button-2 button:hover,
+.homePage-landing-buttons-button-1 button:hover {
   border-radius: 100px;
   border: 2px solid #43a047;
   background-color: #43a047;
@@ -166,9 +166,7 @@ body {
     padding-left: 10px;
   }
 
-  .homePage-landing-buttons-button-2 button {
-    margin-left: 10px;
-  }
+
 
   .homePage-landing-buttons-button-1 button,
   .homePage-landing-buttons-button-2 button {
@@ -209,9 +207,18 @@ body.dark-mode .homePage-testimonials {
   /* White text in dark mode */
 }
 
+body.dark-mode .heading {
+  color: white;
+  /* White text in dark mode */
+}
+
 body.dark-mode .testimonials {
   margin-top: 10px;
   margin-bottom: 50px;
+}
+
+.heading {
+  font-weight: bold !important;
 }
 
 body.dark-mode .card {
