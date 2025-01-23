@@ -428,150 +428,109 @@ body.dark .navbar button#theme-toggle {
 }
 
 /* Footer Styles */
-footer {
-    width: 100%; /* Ensure full screen width */
-    background-color: #f8f9fa; /* Light mode background */
-    padding: 10px 20px; /* Reduce padding to decrease height */
-    margin-top: auto; /* Push footer to the bottom */
-    display: flex;
-    justify-content: space-between; /* Distribute sections evenly */
-    align-items: flex-start;
-    box-sizing: border-box; /* Include padding in width calculation */
-    border-top: 1px solid #ddd; /* Subtle border at the top */
-  }
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
-  .footer-row {
+  
+/* Footer container */
+footer {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 20px 20px; /* Increased height by 10px */
+    border-top: 1px solid #ddd;
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping for responsive layout */
-    justify-content: space-between; /* Distribute sections evenly */
-    align-items: flex-start; /* Align items at the top */
-    background-color: #f8f9fa; /* Light mode background */
-    padding: 10px 20px; /* Padding around the content */
-    margin-top: auto; /* Push footer to the bottom of the page */
-    box-sizing: border-box; /* Include padding in width and height calculation */
-    border-top: 1px solid #ddd; /* Subtle border at the top */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
 }
-  
-  .footer-section {
-    flex: 1; /* Equal width for all sections */
-    margin: 0 10px; /* Space between sections */
-    text-align: center; /* Center-align text in sections */
-  }
-  
-  .footer-section.left {
-    text-align: left; /* Align content to the left for the left section */
-  }
-  
-  .footer-section.center {
-    text-align: center; /* Center-align content for the middle section */
-  }
-  
-  .footer-section.right {
-    text-align: right; /* Align content to the right for the right section */
-  }
-  
-  .footer-section h4 {
-    font-size: 1rem;
-    color: #333; /* Light mode text color */
+
+/* Column styles */
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 250px;
+}
+
+.footer-column h3 {
+    font-size: 1.4rem;
     margin-bottom: 10px;
-  }
-  
-  .footer-section p {
+    color: #000; /* Black font color */
+}
+
+.footer-column h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000; /* Black font color */
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    font-size: 1rem;
     margin: 5px 0;
-    font-size: 0.9rem;
-    color: #666; /* Subtle text color for light mode */
-  }
-  
-  .footer-section a {
-    color: #43a047;
+    color: #333; /* Darker grey for better contrast */
+}
+
+.footer-column a {
+    color: #007bff;
     font-weight: bold;
     text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-section a:hover {
-    color: #2f8c45; /* Darker green on hover */
-  }
-  
-  .social-icons {
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #0056b3;
+}
+
+/* Adjust GFG logo size */
+.footer-logo img {
+    width: 100px;
+    height: auto;
+}
+
+/* Icon styles */
+.footer-icons {
     display: flex;
-    justify-content: center;
-    gap: 10px; /* Adjust gap between icons */
-    margin-top: 5px;
-  }
-  
-  .social-icons a {
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.footer-icons a {
     font-size: 1.2rem;
-    color: #333; /* Light mode icon color */
-    transition: color 0.3s ease;
-  }
-  
-  .social-icons a:hover {
-    color: #43a047;
-  }
-  
-  /* Copyright Section */
-  .copyright {
-    text-align: center;
-    font-size: 0.85rem;
-    color: #666;
-    padding-top: 10px;
-    border-top: 1px solid #ddd;
-  }
-  
-  /* Dark Theme Footer Styles */
-  body.dark footer {
-    background-color: rgba(19, 20, 24, 0.9); /* Dark mode background */
-    color: white;
-    border-top: 1px solid #444;
-  }
-  
-  body.dark .footer-section h4 {
-    color: white;
-  }
-  
-  body.dark .footer-section p {
-    color: #aaa;
-  }
-  
-  body.dark .footer-section a {
-    color: #43a047; /* Green links for dark mode */
-  }
-  
-  body.dark .footer-section a:hover {
+    color: #3d8e41;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-icons a:hover {
     color: #2f8c45;
-  }
-  
-  body.dark .social-icons a {
-    color: white; /* White icons for dark mode */
-  }
-  
-  body.dark .social-icons a:hover {
-    color: #43a047; /* Green on hover */
-  }
-  
-  body.dark .copyright {
-    color: #aaa;
-    border-top-color: #444;
-  }
-  
-  /* Responsive Footer Adjustments */
-  @media (max-width: 768px) {
+}
+
+/* Center alignment */
+.footer-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Right alignment */
+.footer-right {
+    text-align: right;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
     footer {
-      flex-direction: column; /* Stack sections vertically */
-      align-items: center;
-      text-align: center;
-      padding: 10px 15px; /* Adjust padding for smaller screens */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-  
-    .footer-section {
-      margin-bottom: 15px; /* Add space between stacked sections */
-      text-align: center; /* Center-align all sections */
+
+    .footer-column {
+        margin-bottom: 20px;
     }
-  
-    .social-icons {
-      justify-content: center; /* Center-align icons */
+
+    .footer-center {
+        margin-left: 0;
+        margin-right: 0;
     }
-  }
-  
-  
+}
