@@ -38,8 +38,17 @@ body.dark-mode h1#darkmode {
   color: white !important;
 }
 
+body.dark-mode .carousel-control-prev-icon,
+body.dark-mode .carousel-control-next-icon {
+  filter: invert(100%);
+  /* Invert colors to make them white in dark mode */
+}
 
-/* Optional: If there are spans within h1 that should retain different colors, like the .green class */
+body.dark-mode .cr-button {
+  color: white;
+  /* Ensure any button text or styles are white */
+}
+
 body.dark-mode h1#darkmode .green {
   color: #43a047;
   /* Preserve the green color */
