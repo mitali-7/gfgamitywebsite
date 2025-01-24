@@ -274,11 +274,8 @@ body.dark-mode .card .text-muted {
   font-size: 12px;
 }
 
-.homePage-numbers {
-  font-family: "Poppins", sans-serif;
-  padding: 30px 15px;
-  /* Add padding for proper spacing */
-}
+
+
 
 .graph-block {
   padding-top: 20px;
@@ -378,10 +375,8 @@ body.dark-mode .number-Card {
   }
 }
 
-.homePage-numbers {
-  text-align: center;
-  color: black;
-}
+
+
 
 
 
@@ -444,14 +439,20 @@ body.dark-mode .number-Card {
 }
 
 .homePage-numbers {
+  font-family: "Poppins", sans-serif;
+  padding: 30px 15px;
+  text-align: center;
+  color: black;
   padding-right: 150px;
   padding-left: 150px;
 }
-
-
-
-
-
+#reachLineChart,
+#lineChart {
+  height: 200px;
+  /* Set a larger height */
+  width: 100%;
+  /* Keep the width flexible */
+}
 .graph-block {
   width: 230px;
   height: 280px;

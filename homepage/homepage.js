@@ -52,6 +52,7 @@ const reach_data = {
 
 const options = {
   responsive: true,
+  maintainAspectRatio: false, // Allow control of height
   plugins: {
     legend: {
       position: "top",
@@ -61,10 +62,23 @@ const options = {
       text: "Audience Impact Over Time",
     },
   },
+  scales: {
+    y: {
+      beginAtZero: true, // Optional: Ensures the Y-axis starts at 0
+    },
+  },
+  // Manually set the chart's height
+  layout: {
+    padding: {
+      top: 20,
+      bottom: 20
+    }
+  }
 };
 
 const reachOptions = {
   responsive: true,
+  maintainAspectRatio: false, // Allow control of height
   plugins: {
     legend: {
       position: "top",
@@ -74,7 +88,20 @@ const reachOptions = {
       text: "Our Reach",
     },
   },
+  scales: {
+    y: {
+      beginAtZero: true,
+    },
+  },
+  // Set the chart's height
+  layout: {
+    padding: {
+      top: 20,
+      bottom: 20
+    }
+  }
 };
+
 
 window.onload = function () {
   const ctxLine = document.getElementById("lineChart").getContext("2d");
