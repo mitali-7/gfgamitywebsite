@@ -1,0 +1,39 @@
+**theme toggler css**
+body.dark-mode #theme-toggle {
+  background-color: black !important;
+  color: white !important;
+  border: 1px solid white;
+}
+
+/* Hover state in dark mode */
+body.dark-mode #theme-toggle:hover {
+  background-color: white !important;
+  color: black !important;
+}
+*theme toggler heading**
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const themeToggle = document.getElementById("theme-toggle");
+      const body = document.body;
+
+      // Check for saved theme in localStorage
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark-mode") {
+        body.classList.add("dark-mode");
+        themeToggle.textContent = "Light Mode";
+      }
+
+      themeToggle.addEventListener("click", function () {
+        body.classList.toggle("dark-mode");
+
+        // Update button text and save theme preference
+        if (body.classList.contains("dark-mode")) {
+          themeToggle.textContent = "Light Mode";
+          localStorage.setItem("theme", "dark-mode");
+        } else {
+          themeToggle.textContent = "Dark Mode";
+          localStorage.setItem("theme", "light-mode");
+        }
+      });
+    });
+  </script>

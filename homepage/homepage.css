@@ -21,17 +21,16 @@ body.dark-mode .text-box:hover {
   /* Lighter shadow for dark mode */
 }
 
-/* Dark mode button styles */
 body.dark-mode #theme-toggle {
-  background-color: black;
-  color: white;
+  background-color: black !important;
+  color: white !important;
   border: 1px solid white;
 }
 
 /* Hover state in dark mode */
 body.dark-mode #theme-toggle:hover {
-  background-color: white;
-  color: black;
+  background-color: white !important;
+  color: black !important;
 }
 
 body.dark-mode h1#darkmode {

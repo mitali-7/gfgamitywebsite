@@ -6,31 +6,7 @@
 }
 
 /* Dark mode styles for dropdown menu */
-body.dark-mode .navbar .dropdown-menu {
-    background-color: black !important;
-    /* Dark mode background color */
-    border: 1px solid #444 !important;
-    /* Dark border for better visibility */
-}
 
-/* Ensure text inside the dropdown menu is visible in dark mode */
-body.dark-mode .navbar .dropdown-menu .dropdown-item {
-    color: white !important;
-    /* White text for better contrast in dark mode */
-}
-
-/* Optional: Change text color on hover */
-body.dark-mode .navbar .dropdown-menu .dropdown-item:hover {
-    background-color: #333 !important;
-    /* Darker background when hovering */
-    color: #fff !important;
-    /* White text when hovering */
-}
-
-#darkmode {
-    color: black !important;
-    transition: background-color 0.3s, color 0.3s !important;
-}
 
 /* Light mode (default) button styles */
 #theme-toggle {
@@ -63,20 +39,45 @@ body.dark-mode .navbar .dropdown-menu .dropdown-item:hover {
     /* Light mode link color */
 }
 
-/* Dark Mode */
+/* Dark mode styles for navbar background */
+/* Dark mode styles for the entire navbar */
 body.dark-mode .navbar {
-    background-color: black !important;
-    /* Dark background */
-    color: white !important;
-    /* Dark text */
+    background-color: #333 !important;
+    border-bottom: 1px solid #444 !important;
 }
 
+/* Dark mode link colors */
 body.dark-mode .navbar a.nav-link {
     color: white !important;
-    /* Dark mode link color */
 }
 
 body.dark-mode .navbar a.nav-link:hover {
     color: #ccc !important;
-    /* Hover color in dark mode */
+}
+
+/* Dark mode dropdown menu */
+body.dark-mode .navbar .dropdown-menu {
+    background-color: black !important;
+    border: 1px solid #444 !important;
+}
+
+body.dark-mode .navbar .dropdown-menu .dropdown-item {
+    color: white !important;
+}
+
+body.dark-mode .navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #444 !important;
+    color: white !important;
+}
+
+/* Dark mode toggle button */
+body.dark-mode #theme-toggle {
+    background-color: black !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+body.dark-mode #theme-toggle:hover {
+    background-color: white !important;
+    color: black !important;
 }
