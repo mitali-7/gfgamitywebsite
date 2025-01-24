@@ -37,6 +37,10 @@ body.dark-mode h1#darkmode {
   color: white !important;
 }
 
+body.dark-mode h4#darkmode {
+  color: white !important;
+}
+
 body.dark-mode .carousel-control-prev-icon,
 body.dark-mode .carousel-control-next-icon {
   filter: invert(100%);
