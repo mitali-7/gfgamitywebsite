@@ -51,6 +51,10 @@ body.dark-mode .navbar a.nav-link {
     color: white !important;
 }
 
+body.dark-mode .navbar h4 {
+    color: white !important;
+}
+
 body.dark-mode .navbar a.nav-link:hover {
     color: #ccc !important;
 }
