@@ -111,3 +111,13 @@ nav {
 .footer-row {
   transition: color 0.3s;
 }
+
+
+body.dark-mode .navbar {
+  background-color: #191919 !important; 
+  color: white !important;
+}
+
+body.dark-mode .navbar .nav-link {
+  color: white !important;
+}
