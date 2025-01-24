@@ -34,6 +34,17 @@ body.dark-mode #theme-toggle:hover {
   color: black;
 }
 
+body.dark-mode h1#darkmode {
+  color: white !important;
+}
+
+
+/* Optional: If there are spans within h1 that should retain different colors, like the .green class */
+body.dark-mode h1#darkmode .green {
+  color: #43a047;
+  /* Preserve the green color */
+}
+
 /* Dark Mode */
 body.dark-mode #darkmode {
   color: white;
@@ -446,6 +457,7 @@ body.dark-mode .number-Card {
   padding-right: 150px;
   padding-left: 150px;
 }
+
 #reachLineChart,
 #lineChart {
   height: 200px;
@@ -453,6 +465,11 @@ body.dark-mode .number-Card {
   width: 100%;
   /* Keep the width flexible */
 }
+
+.head {
+  font-weight: bolder;
+}
+
 .graph-block {
   width: 230px;
   height: 280px;
