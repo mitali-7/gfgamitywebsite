@@ -45,7 +45,9 @@
           <li class="nav-item me-3">
             <a class="nav-link" href="/communityPartner/comm.html">Collaborations</a>
           </li>
-
+          <li class="nav-item me-3">
+            <a class="nav-link" href="/newsletter/newsletter.html">Newsletter</a>
+          </li>
           <li class="nav-item me-3">
             <a class="nav-link" href="/contactUs/contactus.html">Contact Us</a>
           </li>
@@ -548,20 +550,16 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script>
     const button = document.getElementById('theme-toggle');
-    let currentTheme = localStorage.getItem('theme') || 'light';
-
-    // Set initial theme and button text
-    document.body.className = currentTheme;
-    button.innerText = currentTheme === 'light' ? 'Dark Mode' : 'Light Mode';
+    // Always set the theme to dark when the page loads
+    document.body.className = 'dark';
+    button.innerText = 'Light Mode';
 
     button.addEventListener('click', () => {
-      currentTheme = currentTheme === 'light' ? 'dark' : 'light';
-      document.body.className = currentTheme;
-      localStorage.setItem('theme', currentTheme);
-      button.innerText = currentTheme === 'light' ? 'Dark Mode' : 'Light Mode';
-      button.setAttribute('aria-label', `${currentTheme} Mode`);
+        let currentTheme = document.body.className === 'light' ? 'dark' : 'light';
+        document.body.className = currentTheme;
+        button.innerText = currentTheme === 'light' ? 'Dark Mode' : 'Light Mode';
     });
-  </script>
+</script>
 </body>
 
 </html>

@@ -59,6 +59,7 @@ themeToggleButton.addEventListener('click', () => {
     contactUsText.style.color = '#43a047'; 
 
     // Change button text color to white
+    themeToggleButton.style.backgroundColor = '#43a047';
     themeToggleButton.style.color = 'white';
   } else {
     // Light mode is active

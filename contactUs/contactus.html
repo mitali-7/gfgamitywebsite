@@ -43,12 +43,14 @@
           <li class="nav-item me-3">
             <a class="nav-link" href="/communityPartner/comm.html">Collaborations</a>
           </li>
-
+          <li class="nav-item me-3">
+            <a class="nav-link" href="/newsletter/newsletter.html">Newsletter</a>
+          </li>
           <li class="nav-item me-3">
             <a class="nav-link" href="/contactUs/contactus.html">Contact Us</a>
           </li>
           <li class="nav-item me-3"></li>
-          <button id="theme-toggle" class="btn btn-outline-dark">Dark Mode</button>
+              <button id="theme-toggle" class="btn btn-outline-dark">Dark Mode</button>
           </li>
         </ul>
       </div>
@@ -63,6 +65,14 @@
   <script src="contact.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const themeButton = document.getElementById('theme-toggle');
+    themeButton.style.backgroundColor = "#43a047";
+    themeButton.style.color = "white";
+});
+
+  </script>
 </body>
 
 </html>

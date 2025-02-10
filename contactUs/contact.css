@@ -36,8 +36,36 @@ iframe {
   background: #3d8e41;
 }
 
-/* Make the navbar button text white in dark mode */
-body.dark-mode .navbar button#theme-toggle {
-  color: white !important; /* Set the button text to white in dark mode */
-  border: 1px solid white !important; /* Optional: Change the button border to white */
+/* General Button Styling */
+#theme-toggle {
+  background-color: #43a047 !important; /* Green background */
+  color: white !important; /* White text */
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover and Active Effects */
+#theme-toggle:hover {
+  background-color: #3d8e41 !important; /* Slightly darker green on hover */
+}
+
+#theme-toggle:active {
+  transform: scale(0.97);
+}
+
+/* 🔥 Force Button to Stay Green in Dark Mode */
+body.dark #theme-toggle {
+  background-color: #43a047 !important; /* Always Green */
+  color: white !important;
+  border: none !important;
+}
+
+body.dark #theme-toggle:hover {
+  background-color: #3d8e41 !important; /* Slightly darker green */
 }

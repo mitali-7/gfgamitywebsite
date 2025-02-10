@@ -231,58 +231,36 @@ body.dark .navbar {
 
 /* General Button Styling */
 #theme-toggle {
-    background-color: #43a047;
-    /* Green background */
-    color: white;
-    /* White text */
-    font-family: 'Poppins', sans-serif;
-    /* Matches overall font style */
-    font-size: 1rem;
-    /* Adjust font size */
-    font-weight: 500;
-    /* Medium-weight text */
-    padding: 10px 20px;
-    /* Add padding for a comfortable click area */
-    border: none;
-    /* Remove border */
-    border-radius: 6px;
-    /* Slightly rounded corners */
-    cursor: pointer;
-    /* Pointer cursor on hover */
-    transition: background-color 0.3s, transform 0.2s;
-    /* Smooth transitions */
+  background-color: #3ea043 !important; /* Green background */
+  color: white !important; /* White text */
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 /* Hover and Active Effects */
 #theme-toggle:hover {
-    background-color: #3d8e41;
-    /* Slightly darker green on hover */
+  background-color: #3d8e41 !important; /* Slightly darker green on hover */
 }
 
 #theme-toggle:active {
-    transform: scale(0.97);
-    /* Slight shrink effect on click */
+  transform: scale(0.97);
 }
 
-/* Focus Styling for Accessibility */
-#theme-toggle:focus {
-    outline: none;
-    /* Remove focus outline */
-}
-
-/* Dark Mode Button Styling */
+/* Keep Button Green in Both Light and Dark Modes */
 body.dark #theme-toggle {
-    background-color: #1a1a1a;
-    /* Dark background in dark mode */
-    color: #43a047;
-    /* Green text */
+  background-color: #43a047 !important; /* Always Green */
+  color: white !important;
 }
 
 body.dark #theme-toggle:hover {
-    background-color: #333;
-    /* Slightly lighter dark background on hover */
+  background-color: #3d8e41 !important; /* Slightly darker green */
 }
-
 /* Responsive Dark Theme Adjustments */
 @media (max-width: 768px) {
     body.dark .nav-links {
