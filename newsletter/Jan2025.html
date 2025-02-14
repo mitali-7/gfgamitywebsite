@@ -4,27 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>January 2025 Newsletter</title>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>January 2025 Newsletter</title>
     <style>
-    body {
-        background-color: black;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    .pdf-container {
-        width: 90%;
-        max-width: 1200px;
-        height: 90vh;
-    }
-    iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-    }
-</style>  
+        /* Remove body margins & set full-page height */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* PDF container */
+        .pdf-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: auto; /* Allow scrolling */
+        }
+
+        /* Iframe adjustments */
+        iframe {
+            width: 100%;  /* Full width for normal laptop */
+            height: 100%;
+            border: none;
+        }
+
+        /* Media Query for Tablets */
+        @media screen and (max-width: 1024px) {
+            iframe {
+                width: 90vw; /* Reduce width slightly */
+                height: 95vh;
+            }
+        }
+
+        /* Media Query for Small Screens (Phones) */
+        @media screen and (max-width: 768px) {
+            html, body {
+                overflow-x: hidden; /* Hide horizontal scroll on small screens */
+            }
+            .pdf-container {
+                overflow-x: hidden;
+            }
+            iframe {
+                width: 85vw; /* Reduce width to fit 2 pages */
+                height: 80vh;
+            }
+        }
+
+        /* Media Query for Extra Small Screens */
+        @media screen and (max-width: 480px) {
+            iframe {
+                width: 80vw; /* Further reduce width */
+                height: 75vh;
+            }
+        }
+    </style>  
 </head>
 
 <body>
