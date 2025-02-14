@@ -27,6 +27,15 @@ body.dark-mode #theme-toggle {
   border: 1px solid white;
 }
 
+@media (max-width: 768px) {
+  .graph-block {
+    max-width: 80% !important;
+    /* Reduce width */
+    height: auto !important;
+    /* Maintain aspect ratio */
+  }
+}
+
 /* Hover state in dark mode */
 body.dark-mode #theme-toggle:hover {
   background-color: white !important;
