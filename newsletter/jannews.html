@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>January 2025 Newsletter</title>
+    <style>
+        /* Remove body margins & set full-page height */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Button style */
+        .pdf-button {
+            padding: 15px 20px;
+            background-color: white;
+            color: black;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .pdf-button:hover {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="pdf-button" onclick="openPDF()">📄 Open January 2025 Newsletter</button>
+
+    <script>
+        function openPDF() {
+            window.open('JanNewsletter.pdf', '_blank');
+        }
+    </script>
+</body>
+</html>
