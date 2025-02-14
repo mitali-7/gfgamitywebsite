@@ -652,12 +652,12 @@ body.dark .footer-right a:hover {
     .footer-left h3, 
     .footer-right p, 
     .footer-right a {
-        font-size: 0.9 rem !important; /* Smaller text */
+        font-size: smaller !important; /* Smaller text */
         margin-bottom: 5px !important;
         padding-right: 5px;
     }
     .footer-center h2{
-        font-size: 1.5rem;
+        font-size: small;
         margin-bottom: 5px;
     }
 
