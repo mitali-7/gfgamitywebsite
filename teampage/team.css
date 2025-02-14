@@ -514,11 +514,13 @@ body.dark .copyright {
   .footer-content {
     flex-direction: column;
     align-items: center;
+    font-size: smaller;
   }
 
   .footer-section {
     width: 100%;
     margin-bottom: 20px;
+    font-size: smaller;
   }
 }
 
