@@ -654,6 +654,7 @@ body.dark .footer-right a:hover {
     .footer-right a {
         font-size: 0.9 rem !important; /* Smaller text */
         margin-bottom: 5px !important;
+        padding-right: 5px;
     }
     .footer-center h2{
         font-size: 1.5rem;
