@@ -430,20 +430,20 @@ footer {
 }
 
 .footer-column h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
     color: #000; /* Black font color */
 }
 
 .footer-column h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #000; /* Black font color */
     margin-bottom: 10px;
 }
 
 .footer-column p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 5px 0;
     color: #333; /* Darker grey for better contrast */
 }
@@ -585,3 +585,92 @@ body.dark .footer-right a:hover {
         margin-bottom: 20px;
     }
 }
+
+@media (max-width: 480px) {
+    /* Reduce font size for better readability */
+    .title {
+        font-size: 1.1em !important;
+        text-align: center !important;
+    }
+
+    .subtitle {
+        font-size: 1.3em !important;
+        text-align: center !important;
+    }
+
+    /* Reduce font size of description */
+    .description {
+        font-size: 14px !important; /* Smaller font size */
+        padding: 8px !important;
+        margin-bottom: 2.5rem !important; /* Add space below to prevent overlap with carousel */
+    }
+
+    /* Reduce font size for event count */
+    .event-count {
+        font-size: 14px !important;
+        margin-bottom: 2.5rem !important; /* Add space below event count */
+    }
+
+    /* Add space above and below carousel */
+    .image-changer {
+        height: 350px !important; /* Adjusted height for mobile */
+        margin-top: 4rem !important; /* Increase space above */
+        margin-bottom: 4rem !important; /* Increase space below */
+    }
+}
+@media (max-width: 480px) {
+    /* Footer container adjustments */
+    footer {
+        display: flex !important;
+        flex-direction: column !important; /* Stack sections one after another */
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 10px !important;
+        width: 100% !important;
+        overflow-x: hidden;
+    }
+
+    /* Universal style for all footer sections */
+    .footer-left, .footer-center, .footer-right {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* Adjust GFG logo size */
+    .footer-left img {
+        width: 30px !important; /* Smaller logo */
+        height: auto !important;
+        margin-bottom: 3px !important;
+    }
+
+    /* Font size reduction */
+    .footer-left h3, 
+    .footer-right p, 
+    .footer-right a {
+        font-size: 0.9 rem !important; /* Smaller text */
+        margin-bottom: 5px !important;
+    }
+    .footer-center h2{
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    /* Social Media Icons */
+    .footer-icons {
+        display: flex !important;
+        gap: 5px !important;
+        justify-content: center !important;
+        margin-bottom: 10px !important;
+    }
+
+    .footer-icons a {
+        font-size: 0.9rem !important; /* Reduce icon size */
+    }
+}
+
+
