@@ -626,9 +626,10 @@ body.dark .footer-right a:hover {
         justify-content: center !important;
         align-items: center !important;
         text-align: center !important;
-        padding: 10px !important;
+        padding: 5px !important; /* Reduce padding */
         width: 100% !important;
         overflow-x: hidden;
+        min-height: 120px !important; /* Set a smaller height */
     }
 
     /* Universal style for all footer sections */
@@ -638,40 +639,41 @@ body.dark .footer-right a:hover {
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
-        margin-bottom: 10px !important;
+        margin-bottom: 5px !important; /* Reduce bottom margin */
     }
 
     /* Adjust GFG logo size */
     .footer-left img {
-        width: 30px !important; /* Smaller logo */
+        width: 25px !important; /* Further reduced logo size */
         height: auto !important;
-        margin-bottom: 3px !important;
+        margin-bottom: 2px !important;
     }
 
     /* Font size reduction */
-    .footer-left h3, 
     .footer-right p, 
     .footer-right a {
-        font-size: smaller !important; /* Smaller text */
-        margin-bottom: 5px !important;
-        padding-right: 5px;
+        font-size: 0.75rem !important; /* Smaller text */
+        margin-bottom: 3px !important; /* Less margin */
+        padding-right: 3px !important;
     }
-    .footer-center h2{
-        font-size: small;
-        margin-bottom: 5px;
+    .footer-left h3, {
+        font-size: 0.5rem !important;
+    }
+
+    .footer-center h2 {
+        font-size: 1rem !important;
+        margin-bottom: 3px !important;
     }
 
     /* Social Media Icons */
     .footer-icons {
         display: flex !important;
-        gap: 5px !important;
+        gap: 4px !important;
         justify-content: center !important;
-        margin-bottom: 10px !important;
+        margin-bottom: 5px !important; /* Reduce spacing */
     }
 
     .footer-icons a {
-        font-size: smaller !important; /* Reduce icon size */
+        font-size: 0.75rem !important; /* Reduce icon size */
     }
 }
-
-
