@@ -371,12 +371,14 @@ body.dark .copyright {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-size: smaller;
   }
 
   .footer-section {
     width: 100%;
     margin-bottom: 20px;
     text-align: center;
+    font-size: smaller;
   }
 
   .footer-section:first-child {
