@@ -70,6 +70,48 @@ body {
     gap: 1.5rem !important;
     width: 95% !important;
   }
+  /* Center align title and subtitle */
+  .title, .subtitle {
+    text-align: center !important;
+    margin-left: 0 !important;
+    margin-top: 2rem !important;
+  }
+
+  /* Reduce font size */
+  .title {
+    font-size: 1.2em !important; /* Smaller title */
+  }
+
+  .subtitle {
+    font-size: 1.5em !important; /* Smaller subtitle */
+  }
+  /* Adjust card size */
+  .card {
+    width: 100% !important; /* Slightly smaller width */
+    max-width: 320px !important; /* Limit maximum size */
+    height: 22rem !important; /* Reduce height */
+    padding: 1.5rem !important;
+  }
+
+  .imgbox {
+    height: 90% !important; /* Reduce image height */
+  }
+
+  .details {
+    padding: 6px 0 !important;
+  }
+
+  .name {
+    font-size: 1rem !important; /* Slightly smaller font */
+  }
+
+  .designation {
+    font-size: 0.85rem !important; /* Slightly smaller font */
+  }
+
+  .icons a {
+    font-size: 1.2rem !important; /* Adjust icon size */
+  }
 }
 /* Navbar Improvements */
 .navbar {
@@ -293,6 +335,21 @@ body {
     gap: 0.5rem !important;
     width: 95% !important;
     margin-top: 2rem !important;
+  }
+  /* Center align title and subtitle */
+  .title, .subtitle {
+    text-align: center !important;
+    margin-left: 0 !important;
+    margin-top: 2rem !important;
+  }
+
+  /* Reduce font size */
+  .title {
+    font-size: 1.2em !important; /* Smaller title */
+  }
+
+  .subtitle {
+    font-size: 1.5em !important; /* Smaller subtitle */
   }
 
   .card {
