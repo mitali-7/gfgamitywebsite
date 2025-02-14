@@ -670,7 +670,7 @@ body.dark .footer-right a:hover {
     }
 
     .footer-icons a {
-        font-size: 0.9rem !important; /* Reduce icon size */
+        font-size: smaller !important; /* Reduce icon size */
     }
 }
 
