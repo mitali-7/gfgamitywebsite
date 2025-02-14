@@ -57,7 +57,7 @@
         </div>
       </nav>
     <div class="grid">
-        <a href="jannews.html" class="square" target="_blank" rel="noopener noreferrer">January 2025</a>
+      <button class="square pdf-button" onclick="openPDF()">📄 January 2025</button>
         <a href="" class="square">February 2025</a>
         <a href="" class="square">March 2025</a>
         <!-- Add new rows from here -->
@@ -72,6 +72,11 @@
           </span>
           <h3>Geeks for Geeks</h3>
         </div>
+        <script>
+          function openPDF() {
+              window.open('JanNewsletter.pdf', '_blank');
+          }
+      </script>
         <div class="ms-4">
           <p>Connect with us</p>
           <div>
