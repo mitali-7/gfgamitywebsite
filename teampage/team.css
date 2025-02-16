@@ -488,7 +488,7 @@ footer {
 
 .footer-section h4 {
   color: #333;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 1.2rem;
 }
 
@@ -580,7 +580,20 @@ body.dark .copyright {
     font-size: smaller;
   }
 }
+/* Responsive Footer */
+@media (max-width: 480px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    font-size: smaller;
+  }
 
+  .footer-section {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: smaller;
+  }
+}
 /* Responsive Dark Theme Adjustments */
 @media (max-width: 768px) {
   body.dark .nav-links {
