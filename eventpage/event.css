@@ -685,16 +685,16 @@ body.dark .footer-right a:hover {
     }
 
     .footer-logo h3 {
-        font-size: 0.9rem !important; /* Smaller size */
+        font-size: 1rem !important; /* Smaller size */
         font-weight: 500; /* Slightly lighter weight */
-        margin-bottom: 5px; /* Reduce spacing */
+        margin-bottom: 3px; /* Reduce spacing */
     }
 
     /* Reduce font size for "Enhance your coding with us!" */
     .footer-center p {
         font-size: 0.9rem !important; /* Smaller size */
         font-weight: 400; /* Slightly lighter */
-        margin-top: 5px; /* Reduce spacing */
+        margin-top: 3px; /* Reduce spacing */
     }
 
 }
