@@ -608,7 +608,7 @@ body.dark .footer-right a:hover {
     /* Reduce font size for event count */
     .event-count {
         font-size: 14px !important;
-        margin-bottom: 2.5rem !important; /* Add space below event count */
+        margin-bottom: 2.8rem !important; /* Add space below event count */
     }
 
     /* Add space above and below carousel */
@@ -622,14 +622,14 @@ body.dark .footer-right a:hover {
     /* Footer container adjustments */
     footer {
         display: flex !important;
-        flex-direction: column !important; /* Stack sections one after another */
+        flex-direction: column !important;
         justify-content: center !important;
         align-items: center !important;
         text-align: center !important;
-        padding: 5px !important; /* Reduce padding */
+        padding: 5px !important;
         width: 100% !important;
         overflow-x: hidden;
-        min-height: 120px !important; /* Set a smaller height */
+        min-height: 120px !important;
     }
 
     /* Universal style for all footer sections */
@@ -639,41 +639,63 @@ body.dark .footer-right a:hover {
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
-        margin-bottom: 5px !important; /* Reduce bottom margin */
+        margin-bottom: 5px !important;
     }
 
     /* Adjust GFG logo size */
     .footer-left img {
-        width: 25px !important; /* Further reduced logo size */
-        height: auto !important;
+        width: 25px !important;
+        height: 20px !important;
         margin-bottom: 2px !important;
     }
 
-    /* Font size reduction */
-    .footer-right p, 
-    .footer-right a {
-        font-size: 0.75rem !important; /* Smaller text */
-        margin-bottom: 3px !important; /* Less margin */
-        padding-right: 3px !important;
-    }
-    .footer-left h3, {
-        font-size: 0.5rem !important;
-    }
-
-    .footer-center h2 {
-        font-size: 1rem !important;
-        margin-bottom: 3px !important;
-    }
-
-    /* Social Media Icons */
+    /* Centering Social Media Icons */
     .footer-icons {
         display: flex !important;
-        gap: 4px !important;
-        justify-content: center !important;
-        margin-bottom: 5px !important; /* Reduce spacing */
+        justify-content: center !important; /* Ensures proper centering */
+        align-items: center !important;
+        gap: 6px !important;
+        margin: 10px auto !important; /* Centers the icons */
     }
 
     .footer-icons a {
-        font-size: 0.75rem !important; /* Reduce icon size */
+        font-size: 0.9rem !important; /* Adjusted icon size */
     }
+
+    /* Centering Copyright Section */
+    .footer-right {
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 10px auto !important; /* Centers the text block */
+    }
+ 
+    .footer-right a,
+    .footer-column p {
+        font-size: 0.9rem !important;
+        margin-bottom: 3px !important;
+        text-align: center !important;
+    }
+
+    .footer-center h2 {
+        font-size: 1.5rem !important;
+        margin-bottom: 3px !important;
+    }
+
+    .footer-logo h3 {
+        font-size: 0.9rem !important; /* Smaller size */
+        font-weight: 500; /* Slightly lighter weight */
+        margin-bottom: 5px; /* Reduce spacing */
+    }
+
+    /* Reduce font size for "Enhance your coding with us!" */
+    .footer-center p {
+        font-size: 0.9rem !important; /* Smaller size */
+        font-weight: 400; /* Slightly lighter */
+        margin-top: 5px; /* Reduce spacing */
+    }
+
 }
+
