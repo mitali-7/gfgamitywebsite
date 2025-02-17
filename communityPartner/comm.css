@@ -123,3 +123,12 @@ body.dark-mode .navbar .nav-link {
 }
 
 
+#theme-toggle {
+  background-color: #43a047 !important;
+  color: white;
+  border: none;
+}
+
+#theme-toggle:hover {
+  background-color: #368d3e !important; /* Optional: a slightly darker shade for hover effect */
+}

@@ -76,7 +76,7 @@ body.dark-mode .navbar .dropdown-menu .dropdown-item:hover {
 
 /* Dark mode toggle button */
 body.dark-mode #theme-toggle {
-    background-color: black !important;
+    background-color: #43a047 !important;
     color: white !important;
     border: 1px solid white !important;
 }
