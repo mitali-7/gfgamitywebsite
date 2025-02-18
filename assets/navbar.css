@@ -1,24 +1,9 @@
+/*
 .navbar .dropdown-menu {
     background-color: white !important;
-    /* Light mode background color */
+    /* Light mode background color 
     border: 1px solid #ccc !important;
-    /* Border for the dropdown */
-}
-
-/* Dark mode styles for dropdown menu */
-
-
-/* Light mode (default) button styles */
-#theme-toggle {
-    background-color: transparent !important;
-    color: black !important;
-    border: 1px solid black !important;
-}
-
-/* Hover state in light mode */
-#theme-toggle:hover {
-    background-color: black !important;
-    color: white !important;
+    /* Border for the dropdown 
 }
 
 .navbar-logo {
@@ -26,27 +11,24 @@
     height: 30px !important;
 }
 
-/* Default Light Mode */
 .navbar {
     background-color: #f8f9fa !important;
-    /* Light background */
+    /* Light background 
     color: black !important;
-    /* Light text */
+    /* Light text 
 }
 
 .navbar a.nav-link {
     color: black !important;
-    /* Light mode link color */
+    /* Light mode link color 
 }
 
-/* Dark mode styles for navbar background */
-/* Dark mode styles for the entire navbar */
 body.dark-mode .navbar {
     background-color: #333 !important;
     border-bottom: 1px solid #444 !important;
 }
 
-/* Dark mode link colors */
+/* Dark mode link colors 
 body.dark-mode .navbar a.nav-link {
     color: white !important;
 }
@@ -59,7 +41,7 @@ body.dark-mode .navbar a.nav-link:hover {
     color: #ccc !important;
 }
 
-/* Dark mode dropdown menu */
+/* Dark mode dropdown menu 
 body.dark-mode .navbar .dropdown-menu {
     background-color: black !important;
     border: 1px solid #444 !important;
@@ -73,15 +55,134 @@ body.dark-mode .navbar .dropdown-menu .dropdown-item:hover {
     background-color: #444 !important;
     color: white !important;
 }
-
-/* Dark mode toggle button */
-body.dark-mode #theme-toggle {
-    background-color: #43a047 !important;
-    color: white !important;
-    border: 1px solid white !important;
+*/
+nav {
+    position: relative;
+    z-index: 2;
+    /* Higher than 1 to stay above the overlay */
 }
 
-body.dark-mode #theme-toggle:hover {
-    background-color: white !important;
-    color: black !important;
+.navbar {
+    width: 100%;
+    padding: 0 15px;
+    /* Add some padding on sides */
+    box-sizing: border-box;
+    /* Include padding in width calculation */
+}
+
+.navbar-toggler {
+    border: none;
+    /* Remove border */
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+    /* Set a contrasting background color for the icon */
+}
+
+.nav-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: white !important;
+}
+
+.nav-links :hover {
+    color: #43a047;
+}
+
+body.dark .navbar {
+    background-color: #1a1a1a !important;
+    color: white;
+}
+
+.navbar-logo {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+@media (max-width: 992px) {
+    body.dark .navbar-toggler {
+        border: none;
+        /* Remove default border */
+        background: transparent;
+        /* Make the background transparent */
+    }
+
+    body.dark .navbar-toggler-icon {
+        width: 30px;
+        /* Slightly larger for better visibility */
+        height: 6px;
+        /* Slim bar for a modern look */
+        display: block;
+        position: relative;
+        background-color: white;
+        /* White bars for dark mode */
+        border-radius: 5px;
+        /* Rounded ends for modern design */
+        box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+        /* Subtle glow */
+        transition: all 0.3s ease;
+        /* Smooth hover animation */
+    }
+
+    body.dark .navbar-toggler-icon::before,
+    body.dark .navbar-toggler-icon::after {
+        content: "";
+        width: 30px;
+        /* Same width as the main bar */
+        height: 4px;
+        /* Same height */
+        background-color: white;
+        border-radius: 5px;
+        position: absolute;
+        left: 0;
+        transition: all 0.3s ease;
+        /* Smooth transition for animations */
+    }
+
+    body.dark .navbar-toggler-icon::before {
+        top: -8px;
+        /* Positioned above the main bar */
+    }
+
+    body.dark .navbar-toggler-icon::after {
+        top: 8px;
+        /* Positioned below the main bar */
+    }
+
+    /* Hover Effect for Navbar Toggler */
+    body.dark .navbar-toggler:hover .navbar-toggler-icon {
+        background-color: #f6f0f0;
+        /* Slightly lighter bar color on hover */
+    }
+
+    body.dark .navbar-toggler:hover .navbar-toggler-icon::before,
+    body.dark .navbar-toggler:hover .navbar-toggler-icon::after {
+        background-color: #ccc;
+        /* Matching hover color */
+    }
+}
+
+
+body.dark .navbar a {
+    color: white !important;
+}
+
+body.dark .navbar a:hover {
+    color: #43a047 !important;
+}
+
+body.dark .navbar h4 {
+    color: white !important;
+    /* Set the h4 text to white in dark mode */
+}
+
+body.dark .navbar button#theme-toggle {
+    color: white !important;
+    /* Set the button text to white in dark mode */
+}
+
+.dark-mode .navbar {
+    background-color: #1e1e1e !important;
 }

@@ -22,9 +22,8 @@ body.dark-mode .text-box:hover {
 }
 
 body.dark-mode #theme-toggle {
-  background-color: black !important;
+  background-color: #43a047 !important;
   color: white !important;
-  border: 1px solid white;
 }
 
 @media (max-width: 768px) {
@@ -41,9 +40,7 @@ body.dark-mode #theme-toggle {
   color: #ffffff !important;
 }
 
-.dark-mode .navbar {
-  background-color: #1e1e1e !important;
-}
+
 
 .dark-mode a {
   color: #00bcd4 !important;
@@ -52,13 +49,12 @@ body.dark-mode #theme-toggle {
 .dark-mode button {
   background-color: #333 !important;
   color: #fff !important;
-  border: 1px solid #fff !important;
 }
 
 /* Hover state in dark mode */
 body.dark-mode #theme-toggle:hover {
-  background-color: white !important;
-  color: black !important;
+  opacity: 0.9;
+
 }
 
 body.dark-mode h1#darkmode {
@@ -566,7 +562,7 @@ body.dark-mode .number-Card {
 .homePage-landing {
   width: 100%;
   /* Set the width of the div */
-  height: 550px;
+  height: 610px;
   /* Set a specific height */
   margin-bottom: 20px;
   /* Set the height of the div */
@@ -589,8 +585,6 @@ body.dark-mode .homePage-landing::after {
   content: "";
   /* Required to create the pseudo-element */
   position: absolute;
-  /* Position it over the background image */
-
 
   top: 0;
   left: 0;
@@ -607,4 +601,9 @@ body.dark-mode .homePage-landing::after {
 .carousel-container {
   margin-bottom: 20px !important;
   /* Adjust this value as needed */
+}
+
+.theme-toggle {
+  background-color: #3a8a3e !important;
+  color: white !important;
 }

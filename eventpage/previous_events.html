@@ -205,19 +205,36 @@
   <!-- Bootstrap JS with Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    const button = document.getElementById('theme-toggle');
-    let currentTheme = localStorage.getItem('theme') || 'light';
+    document.addEventListener('DOMContentLoaded', () => {
+      const themeToggleButton = document.getElementById('theme-toggle');
+      const body = document.body;
 
-    // Set initial theme and button text
-    document.body.className = currentTheme;
-    button.innerText = currentTheme === 'light' ? 'Dark Mode' : 'Light Mode';
+      // Enable dark mode by default
+      body.classList.add('dark');
 
-    button.addEventListener('click', () => {
-      currentTheme = currentTheme === 'light' ? 'dark' : 'light';
-      document.body.className = currentTheme;
-      localStorage.setItem('theme', currentTheme);
-      button.innerText = currentTheme === 'light' ? 'Dark Mode' : 'Light Mode';
-      button.setAttribute('aria-label', `${currentTheme} Mode`);
+      if (themeToggleButton) {
+        themeToggleButton.innerText = 'Light Mode';
+
+        themeToggleButton.addEventListener('click', () => {
+          body.classList.toggle('dark');
+          themeToggleButton.innerText = body.classList.contains('dark') ? 'Light Mode' : 'Dark Mode';
+        });
+      }
+
+      // Image changer logic
+      const images = document.querySelectorAll('.image-changer img');
+      let currentIndex = 0;
+
+      function changeImage() {
+        images.forEach(img => img.classList.remove('active'));
+        images[currentIndex].classList.add('active');
+        currentIndex = (currentIndex + 1) % images.length;
+      }
+
+      if (images.length > 0) {
+        images[0].classList.add('active'); // Ensure the first image is visible initially
+        setInterval(changeImage, 3000); // Change image every 3 seconds
+      }
     });
   </script>
 </body>
