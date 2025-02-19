@@ -62,6 +62,25 @@ nav {
     /* Higher than 1 to stay above the overlay */
 }
 
+.dark-mode .dropdown-menu {
+    background-color: #1a1a1a;
+    /* Dark background color to match dark mode */
+    color: white;
+    /* Text color in dark mode */
+}
+
+/* Ensure links are visible in dark mode */
+.dark-mode .dropdown-menu .dropdown-item {
+    color: white;
+    /* White text in dark mode */
+}
+
+/* On hover, change the background color for better visibility */
+.dark-mode .dropdown-menu .dropdown-item:hover {
+    background-color: #333333;
+    /* Slightly lighter color for hover */
+    color: white;
+}
 .navbar {
     width: 100%;
     padding: 0 15px;
@@ -70,6 +89,8 @@ nav {
     /* Include padding in width calculation */
 }
 
+
+
 .navbar-toggler {
     border: none;
     /* Remove border */
@@ -77,7 +98,6 @@ nav {
 
 .navbar-toggler-icon {
     background-color: white;
-    /* Set a contrasting background color for the icon */
 }
 
 .nav-links {
