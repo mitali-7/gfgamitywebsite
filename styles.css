@@ -526,6 +526,32 @@ body.dark-mode .number-Card {
   /* Optional: Set a minimum height */
 }
 
+@media (max-width: 768px) {
+  .carousel-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px !important;
+    /* Space between stacked images */
+    align-items: center;
+  }
+
+  /* Reduce image size on small screens */
+  .carousel-image {
+    max-width: 90%;
+    /* Shrink images to 90% of the screen width */
+    height: auto;
+  }
+
+  /* Adjust arrow positions for small screens */
+  .carousel-control-prev {
+    left: 10px;
+  }
+
+  .carousel-control-next {
+    right: 10px;
+  }
+}
+
 .c-img {
   width: 100%;
   height: 350px;
